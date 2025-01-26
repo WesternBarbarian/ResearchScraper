@@ -11,6 +11,7 @@ A command-line tool for fetching and analyzing recent Computer Science and Artif
 - Focus on CS/AI papers with customizable categories
 - Programmatic usage support
 - AI-powered paper analysis for practical applications and thought leadership
+- Download and organize paper PDFs with metadata
 
 ## Installation
 
@@ -23,7 +24,7 @@ pip install .
 
 ## Command-Line Usage
 
-The tool provides two main commands: `fetch` for retrieving papers and `analyze` for identifying relevant papers using AI.
+The tool provides three main commands: `fetch` for retrieving papers, `analyze` for identifying relevant papers using AI, and `download` for downloading PDFs.
 
 ### Basic Usage
 
@@ -60,12 +61,23 @@ arxiv-fetch analyze --input papers.json --output analyzed_papers.json
 arxiv-fetch analyze --input papers.json --output analyzed_papers.json --min-relevance 0.8
 ```
 
-The analyzer outputs include:
-- Relevance score (0-1)
-- Practical applications assessment
-- Thought leadership value
-- Key insights
-- Original paper metadata for retrieval
+### PDF Download
+
+Download PDFs of analyzed papers and organize them into folders:
+
+```bash
+# Download papers from analyzed JSON file
+arxiv-fetch download --input analyzed_papers.json
+
+# Specify custom output directory (default: ./papers)
+arxiv-fetch download --input analyzed_papers.json --output-dir my_papers
+```
+
+The downloader:
+- Creates a folder for each paper
+- Saves paper metadata alongside PDF
+- Implements smart caching to avoid re-downloads
+- Maintains a download log for tracking
 
 ## Output Format
 
@@ -88,7 +100,7 @@ Analysis output includes:
 You can use the fetcher in your Python scripts:
 
 ```python
-from arxiv_fetcher.cli import run_fetcher, run_analyzer
+from arxiv_fetcher.cli import run_fetcher, run_analyzer, run_downloader
 
 # Fetch and display papers
 run_fetcher(days=7)
@@ -98,6 +110,9 @@ run_fetcher(days=7, export_json='papers.json', export_csv='papers.csv')
 
 # Analyze papers for practical relevance
 run_analyzer(input_file='papers.json', output_file='analyzed_papers.json', min_relevance_score=0.7)
+
+# Download analyzed papers
+run_downloader(input_file='analyzed_papers.json', output_dir='./my_papers')
 ```
 
 ## Configuration
@@ -130,6 +145,7 @@ The tool uses the following default settings (configurable in `config.py`):
   - `arxiv`: For API access
   - `rich`: For formatted terminal output
   - `openai`: For paper analysis
+  - `requests`: For PDF downloads (added for download functionality)
 
 ## Exit Codes
 
@@ -158,9 +174,15 @@ arxiv-fetch fetch
 arxiv-fetch analyze --input papers.json --output analyzed_papers.json
 ```
 
+5. Download and organize analyzed papers:
+```bash
+arxiv-fetch download --input analyzed_papers.json
+```
+
 ## Notes
 
 - The tool respects arXiv's API rate limits
 - Large requests may take longer due to API throttling
 - Cache helps reduce API load and speeds up repeated queries
 - Analysis requires an OpenAI API key in the environment
+- PDF downloads require a stable internet connection

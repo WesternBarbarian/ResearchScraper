@@ -1,0 +1,14 @@
+{
+  "title": "Test Paper",
+  "arxiv_id": "2401.12345",
+  "summary": "Test summary",
+  "analysis": {
+    "is_relevant": true,
+    "relevance_score": 0.8,
+    "practical_applications": "Test applications",
+    "thought_leadership_value": "Test value",
+    "key_insights": [
+      "Test insight"
+    ]
+  }
+}

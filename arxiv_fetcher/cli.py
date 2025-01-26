@@ -11,6 +11,7 @@ from .arxiv_client import ArxivClient
 from .formatter import PaperFormatter
 from .exporters import export_to_json, export_to_csv
 from .paper_analyzer import analyze_papers
+from .paper_downloader import PaperDownloader
 
 def validate_days(days: int) -> bool:
     """Validate the number of days input."""
@@ -72,6 +73,15 @@ def run_analyzer(input_file: str, output_file: str, min_relevance_score: float) 
         print(f"Error: {str(e)}")
         sys.exit(1)
 
+def run_downloader(input_file: str, output_dir: str) -> None:
+    """Run the paper downloader on the analyzed papers."""
+    try:
+        downloader = PaperDownloader(output_dir)
+        downloader.download_papers(input_file)
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        sys.exit(1)
+
 def main() -> None:
     """Entry point for command line interface."""
     parser = argparse.ArgumentParser(description='ArXiv paper fetcher and analyzer')
@@ -96,12 +106,22 @@ def main() -> None:
     analyze_parser.add_argument('--min-relevance', type=float, default=0.7,
                               help='Minimum relevance score (0-1)')
 
+    # Download command
+    download_parser = subparsers.add_parser('download',
+                                          help='Download PDFs of analyzed papers')
+    download_parser.add_argument('--input', type=str, required=True,
+                               help='Input JSON file containing analyzed papers')
+    download_parser.add_argument('--output-dir', type=str, default='papers',
+                               help='Output directory for downloaded papers')
+
     args = parser.parse_args()
 
     if args.command == 'fetch':
         run_fetcher(args.days, args.export_json, args.export_csv)
     elif args.command == 'analyze':
         run_analyzer(args.input, args.output, args.min_relevance)
+    elif args.command == 'download':
+        run_downloader(args.input, args.output_dir)
     else:
         parser.print_help()
         sys.exit(1)
