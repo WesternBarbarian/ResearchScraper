@@ -15,6 +15,10 @@ author = "agent"
 task = "workflow.run"
 args = "ArXiv Papers Fetcher"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "ArXiv Papers Display"
+
 [[workflows.workflow]]
 name = "ArXiv Papers Fetcher"
 author = "agent"
@@ -28,6 +32,20 @@ task = "packager.installForAll"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "arxiv-fetch --days 7 --export-json papers_export.json"
+
+[[workflows.workflow]]
+name = "ArXiv Papers Display"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "arxiv-fetch --days 3"
 
 [deployment]
 run = ["sh", "-c", "arxiv-fetch --days 7 --export-json papers_export.json"]
