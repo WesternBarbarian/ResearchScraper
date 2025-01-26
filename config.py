@@ -6,19 +6,19 @@ API_DELAY = 3  # seconds between requests
 MAX_RESULTS = 100
 
 # Categories of interest
-CS_AI_CATEGORIES = [
-    "cs.AI",    # Artificial Intelligence
-]
+#CS_AI_CATEGORIES = [
+#    "cs.AI",    # Artificial Intelligence
+#]
 
-CS_ADDITIONAL_CATEGORIES = [
-    "cs.HC",    # Human-Computer Interaction
-    "cs.CY",    # Computers and Society (includes business applications)
-]
+#CS_ADDITIONAL_CATEGORIES = [
+#    "cs.HC",    # Human-Computer Interaction
+#    "cs.CY",    # Computers and Society (includes business applications)
+#]
 
 # Query combinations
 QUERY_COMBINATIONS = [
-    ("cs.AI", "cs.HC"),  # AI + HCI papers
-    ("cs.AI", "cs.CY"),  # AI + Business/Society papers
+    ("cs.CY", "cs.HC"),  # AI + HCI papers
+  #  ("cs.AI", "cs.CY"),  # AI + Business/Society papers
 ]
 
 # Cache settings
