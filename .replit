@@ -27,7 +27,7 @@ task = "packager.installForAll"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python arxiv_papers.py --days 7 --export-json papers_export.json"
+args = "arxiv-fetch --days 7 --export-json papers_export.json"
 
 [deployment]
-run = ["sh", "-c", "python arxiv_papers.py --days 7 --export-json papers_export.json"]
+run = ["sh", "-c", "arxiv-fetch --days 7 --export-json papers_export.json"]

@@ -1,8 +1,15 @@
 [project]
-name = "repl-nix-workspace"
+name = "arxiv-fetcher"
 version = "0.1.0"
-description = "Add your description here"
+description = "ArXiv paper fetcher for CS and AI research papers"
 requires-python = ">=3.11"
 dependencies = [
     "rich>=13.9.4",
 ]
+
+[project.scripts]
+arxiv-fetch = "arxiv_fetcher.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
