@@ -10,6 +10,7 @@ from .cache_manager import CacheManager
 from .arxiv_client import ArxivClient
 from .formatter import PaperFormatter
 from .exporters import export_to_json, export_to_csv
+from .paper_analyzer import analyze_papers
 
 def validate_days(days: int) -> bool:
     """Validate the number of days input."""
@@ -63,18 +64,47 @@ def run_fetcher(days: Optional[int] = None, export_json: Optional[str] = None, e
         print(f"Error: {str(e)}")
         sys.exit(1)
 
+def run_analyzer(input_file: str, output_file: str, min_relevance_score: float) -> None:
+    """Run the paper analyzer on the input file."""
+    try:
+        analyze_papers(input_file, output_file, min_relevance_score)
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        sys.exit(1)
+
 def main() -> None:
     """Entry point for command line interface."""
-    parser = argparse.ArgumentParser(description='Fetch recent CS/AI papers from arXiv')
-    parser.add_argument('--days', type=int, default=7,
-                      help='Number of days to look back (1-30)')
-    parser.add_argument('--export-json', type=str, metavar='FILENAME',
-                      help='Export papers to JSON file')
-    parser.add_argument('--export-csv', type=str, metavar='FILENAME',
-                      help='Export papers to CSV file')
+    parser = argparse.ArgumentParser(description='ArXiv paper fetcher and analyzer')
+    subparsers = parser.add_subparsers(dest='command', help='Available commands')
+
+    # Fetch command
+    fetch_parser = subparsers.add_parser('fetch', help='Fetch recent CS/AI papers from arXiv')
+    fetch_parser.add_argument('--days', type=int, default=7,
+                          help='Number of days to look back (1-30)')
+    fetch_parser.add_argument('--export-json', type=str, metavar='FILENAME',
+                          help='Export papers to JSON file')
+    fetch_parser.add_argument('--export-csv', type=str, metavar='FILENAME',
+                          help='Export papers to CSV file')
+
+    # Analyze command
+    analyze_parser = subparsers.add_parser('analyze', 
+                                         help='Analyze papers for practical AI applications')
+    analyze_parser.add_argument('--input', type=str, required=True,
+                              help='Input JSON file containing papers')
+    analyze_parser.add_argument('--output', type=str, required=True,
+                              help='Output JSON file for analyzed papers')
+    analyze_parser.add_argument('--min-relevance', type=float, default=0.7,
+                              help='Minimum relevance score (0-1)')
 
     args = parser.parse_args()
-    run_fetcher(args.days, args.export_json, args.export_csv)
+
+    if args.command == 'fetch':
+        run_fetcher(args.days, args.export_json, args.export_csv)
+    elif args.command == 'analyze':
+        run_analyzer(args.input, args.output, args.min_relevance)
+    else:
+        parser.print_help()
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
