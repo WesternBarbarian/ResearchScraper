@@ -19,19 +19,10 @@ def get_cache_key(days: int) -> str:
     """Generate cache key based on parameters."""
     return f"papers_{days}_{datetime.now().strftime('%Y-%m-%d')}"
 
-def main(days: Optional[int] = None) -> None:
+def run_fetcher(days: Optional[int] = None, export_json: Optional[str] = None, export_csv: Optional[str] = None) -> None:
     """Main function to fetch and display papers."""
-    parser = argparse.ArgumentParser(description='Fetch recent CS/AI papers from arXiv')
-    parser.add_argument('--days', type=int, default=7,
-                      help='Number of days to look back (1-30)')
-    parser.add_argument('--export-json', type=str, metavar='FILENAME',
-                      help='Export papers to JSON file')
-    parser.add_argument('--export-csv', type=str, metavar='FILENAME',
-                      help='Export papers to CSV file')
-    args = parser.parse_args()
-
-    # Use provided days or command line argument
-    actual_days = args.days if days is None else days
+    # Use provided days or default
+    actual_days = days or 7
 
     # Validate input
     if not validate_days(actual_days):
@@ -56,21 +47,34 @@ def main(days: Optional[int] = None) -> None:
             papers = cached_data
 
         # Export if requested
-        if args.export_json:
-            export_to_json(papers, args.export_json)
-            print(f"Papers exported to JSON: {args.export_json}")
+        if export_json:
+            export_to_json(papers, export_json)
+            print(f"Papers exported to JSON: {export_json}")
 
-        if args.export_csv:
-            export_to_csv(papers, args.export_csv)
-            print(f"Papers exported to CSV: {args.export_csv}")
+        if export_csv:
+            export_to_csv(papers, export_csv)
+            print(f"Papers exported to CSV: {export_csv}")
 
         # Display results if no export options were specified
-        if not (args.export_json or args.export_csv):
+        if not (export_json or export_csv):
             formatter.display_papers(papers)
 
     except Exception as e:
         print(f"Error: {str(e)}")
         sys.exit(1)
+
+def main() -> None:
+    """Entry point for command line interface."""
+    parser = argparse.ArgumentParser(description='Fetch recent CS/AI papers from arXiv')
+    parser.add_argument('--days', type=int, default=7,
+                      help='Number of days to look back (1-30)')
+    parser.add_argument('--export-json', type=str, metavar='FILENAME',
+                      help='Export papers to JSON file')
+    parser.add_argument('--export-csv', type=str, metavar='FILENAME',
+                      help='Export papers to CSV file')
+
+    args = parser.parse_args()
+    run_fetcher(args.days, args.export_json, args.export_csv)
 
 if __name__ == "__main__":
     main()

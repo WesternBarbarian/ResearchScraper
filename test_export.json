@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "exported_at": "2025-01-26T19:42:40.065380",
+    "paper_count": 6,
+    "export_format_version": "1.0"
+  },
+  "papers": [
+    {
+      "title": "Perceived Fairness of the Machine Learning Development Process: Concept\n  Scale Development",
+      "authors": [
+        "Anoop Mishra",
+        "Deepak Khazanchi"
+      ],
+      "published": "2025-01-23T06:51:31Z",
+      "summary": "In machine learning (ML) applications, unfairness is triggered due to bias in\nthe data, the data curation process, erroneous assumptions, and implicit bias\nrendered during the development process. It is also well-accepted by\nresearchers that fairness in ML application development is highly subjective,\nwith a lack of clarity of what it means from an ML development and\nimplementation perspective. Thus, in this research, we investigate and\nformalize the notion of the perceived fairness of ML development from a\nsociotechnical lens. Our goal in this research is to understand the\ncharacteristics of perceived fairness in ML applications. We address this\nresearch goal using a three-pronged strategy: 1) conducting virtual focus\ngroups with ML developers, 2) reviewing existing literature on fairness in ML,\nand 3) incorporating aspects of justice theory relating to procedural and\ndistributive justice. Based on our theoretical exposition, we propose\noperational attributes of perceived fairness to be transparency,\naccountability, and representativeness. These are described in terms of\nmultiple concepts that comprise each dimension of perceived fairness. We use\nthis operationalization to empirically validate the notion of perceived\nfairness of machine learning (ML) applications from both the ML practioners and\nusers perspectives. The multidimensional framework for perceived fairness\noffers a comprehensive understanding of perceived fairness, which can guide the\ncreation of fair ML systems with positive implications for society and\nbusinesses.",
+      "link": "http://arxiv.org/abs/2501.13421v1",
+      "categories": [
+        "cs.HC",
+        "cs.CY",
+        "cs.LG",
+        "J.4; J.1; K.4; K.6; I.2; E.m"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Development of the Critical Reflection and Agency in Computing Index",
+      "authors": [
+        "Aadarsh Padiyath",
+        "Mark Guzdial",
+        "Barbara Ericson"
+      ],
+      "published": "2025-01-22T18:13:05Z",
+      "summary": "As computing's societal impact grows, so does the need for computing students\nto recognize and address the ethical and sociotechnical implications of their\nwork. While there are efforts to integrate ethics into computing curricula, we\nlack a standardized tool to measure those efforts, specifically, students'\nattitudes towards ethical reflection and their ability to effect change. This\npaper introduces the novel framework of Critically Conscious Computing and\nreports on the development and content validation of the Critical Reflection\nand Agency in Computing Index, a novel instrument designed to assess\nundergraduate computing students' attitudes towards practicing critically\nconscious computing. The resulting index is a theoretically grounded,\nexpert-reviewed tool to support research and practice in computing ethics\neducation. This enables researchers and educators to gain insights into\nstudents' perspectives, inform the design of targeted ethics interventions, and\nmeasure the effectiveness of computing ethics education initiatives.",
+      "link": "http://arxiv.org/abs/2501.13060v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Designing and Evaluating an Educational Recommender System with\n  Different Levels of User Control",
+      "authors": [
+        "Qurat Ul Ain",
+        "Mohamed Amine Chatti",
+        "William Kana Tsoplefack",
+        "Rawaa Alatrash",
+        "Shoeb Joarder"
+      ],
+      "published": "2025-01-22T14:14:49Z",
+      "summary": "Educational recommender systems (ERSs) play a crucial role in personalizing\nlearning experiences and enhancing educational outcomes by providing\nrecommendations of personalized resources and activities to learners, tailored\nto their individual learning needs. However, their effectiveness is often\ndiminished by insufficient user control and limited transparency. To address\nthese challenges, in this paper, we present the systematic design and\nevaluation of an interactive ERS, in which we introduce different levels of\nuser control. Concretely, we introduce user control around the input (i.e.,\nuser profile), process (i.e., recommendation algorithm), and output (i.e.,\nrecommendations) of the ERS. To evaluate our system, we conducted an online\nuser study (N=30) to explore the impact of user control on users' perceptions\nof the ERS in terms of several important user-centric aspects. Moreover, we\ninvestigated the effects of user control on multiple recommendation goals,\nnamely transparency, trust, and satisfaction, as well as the interactions\nbetween these goals. Our results demonstrate the positive impact of user\ncontrol on user perceived benefits of the ERS. Moreover, our study shows that\nuser control strongly correlates with transparency and moderately correlates\nwith trust and satisfaction. In terms of interaction between these goals, our\nresults reveal that transparency moderately correlates and trust strongly\ncorrelates with satisfaction. Whereas, transparency and trust stand out as less\ncorrelated with each other.",
+      "link": "http://arxiv.org/abs/2501.12894v1",
+      "categories": [
+        "cs.IR",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at\n  CHI through a Systematic Literature Review",
+      "authors": [
+        "Rock Yuren Pang",
+        "Hope Schroeder",
+        "Kynnedy Simone Smith",
+        "Solon Barocas",
+        "Ziang Xiao",
+        "Emily Tseng",
+        "Danielle Bragg"
+      ],
+      "published": "2025-01-22T00:31:51Z",
+      "summary": "Large language models (LLMs) have been positioned to revolutionize HCI, by\nreshaping not only the interfaces, design patterns, and sociotechnical systems\nthat we study, but also the research practices we use. To-date, however, there\nhas been little understanding of LLMs' uptake in HCI. We address this gap via a\nsystematic literature review of 153 CHI papers from 2020-24 that engage with\nLLMs. We taxonomize: (1) domains where LLMs are applied; (2) roles of LLMs in\nHCI projects; (3) contribution types; and (4) acknowledged limitations and\nrisks. We find LLM work in 10 diverse domains, primarily via empirical and\nartifact contributions. Authors use LLMs in five distinct roles, including as\nresearch tools or simulated users. Still, authors often raise validity and\nreproducibility concerns, and overwhelmingly study closed models. We outline\nopportunities to improve HCI research with and on LLMs, and provide guiding\nquestions for researchers to consider the validity and appropriateness of\nLLM-related work.",
+      "link": "http://arxiv.org/abs/2501.12557v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "A Basis for Human Responsibility in Artificial Intelligence Computation",
+      "authors": [
+        "Vincenzo Calderonio"
+      ],
+      "published": "2025-01-21T20:59:48Z",
+      "summary": "Recent advancements in artificial intelligence have reopened the question\nabout the boundaries of AI autonomy, particularly in discussions around\nartificial general intelligence (AGI) and its potential to act independently\nacross varied purposes. This paper explores these boundaries through the\nanalysis of the Alignment Research Center experiment on GPT-4 and introduces\nthe Start Button Problem, a thought experiment that examines the origins and\nlimits of AI autonomy. By examining the thought experiment and its\ncounterarguments will be enlightened how in the need for human activation and\npurpose definition lies the AI's inherent dependency on human-initiated\nactions, challenging the assumption of AI as an agent. Finally, the paper\naddresses the implications of this dependency on human responsibility,\nquestioning the measure of the extension of human responsibility when using AI\nsystems.",
+      "link": "http://arxiv.org/abs/2501.12498v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC",
+        "F.0; I.2; K.4; K.5"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Expertise elevates AI usage: experimental evidence comparing laypeople\n  and professional artists",
+      "authors": [
+        "Thomas F. Eisenmann",
+        "Andres Karjus",
+        "Mar Canet Sola",
+        "Levin Brinkmann",
+        "Bramantyo Ibrahim Supriyatno",
+        "Iyad Rahwan"
+      ],
+      "published": "2025-01-21T18:53:21Z",
+      "summary": "Novel capacities of generative AI to analyze and generate cultural artifacts\nraise inevitable questions about the nature and value of artistic education and\nhuman expertise. Has AI already leveled the playing field between professional\nartists and laypeople, or do trained artistic expressive capacity, curation\nskills and experience instead enhance the ability to use these new tools? In\nthis pre-registered study, we conduct experimental comparisons between 50\nactive artists and a demographically matched sample of laypeople. We designed\ntwo tasks to approximate artistic practice for testing their capabilities in\nboth faithful and creative image creation: replicating a reference image, and\nmoving as far away as possible from it. We developed a bespoke platform where\nparticipants used a modern text-to-image model to complete both tasks. We also\ncollected and compared participants' sentiments towards AI. On average, artists\nproduced more faithful and creative outputs than their lay counterparts,\nalthough only by a small margin. While AI may ease content creation,\nprofessional expertise is still valuable - even within the confined space of\ngenerative AI itself. Finally, we also explored how well an exemplary\nvision-capable large language model (GPT-4o) would complete the same tasks, if\ngiven the role of an image generation agent, and found it performed on par in\ncopying but outperformed even artists in the creative task. The very best\nresults were still produced by humans in both tasks. These outcomes highlight\nthe importance of integrating artistic skills with AI training to prepare\nartists and other visual professionals for a technologically evolving\nlandscape. We see a potential in collaborative synergy with generative AI,\nwhich could reshape creative industries and education in the arts.",
+      "link": "http://arxiv.org/abs/2501.12374v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    }
+  ]
+}
