@@ -8,11 +8,17 @@ MAX_RESULTS = 100
 # Categories of interest
 CS_AI_CATEGORIES = [
     "cs.AI",    # Artificial Intelligence
-    "cs.CL",    # Computation and Language
-    "cs.CV",    # Computer Vision
-    "cs.LG",    # Machine Learning
-    "cs.NE",    # Neural and Evolutionary Computing
-    "cs.RO",    # Robotics
+]
+
+CS_ADDITIONAL_CATEGORIES = [
+    "cs.HC",    # Human-Computer Interaction
+    "cs.CY",    # Computers and Society (includes business applications)
+]
+
+# Query combinations
+QUERY_COMBINATIONS = [
+    ("cs.AI", "cs.HC"),  # AI + HCI papers
+    ("cs.AI", "cs.CY"),  # AI + Business/Society papers
 ]
 
 # Cache settings

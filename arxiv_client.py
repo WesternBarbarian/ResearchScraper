@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 import time
 from typing import List, Dict, Any, Optional
 
-from config import ARXIV_API_URL, API_DELAY, CS_AI_CATEGORIES
+from config import ARXIV_API_URL, API_DELAY, QUERY_COMBINATIONS
 
 class ArxivClient:
     def __init__(self):
@@ -37,49 +37,53 @@ class ArxivClient:
         end_date = datetime.now()
         start_date = end_date - timedelta(days=days)
 
-        # Construct query
-        query_params = {
-            'search_query': f'cat:({" OR ".join(CS_AI_CATEGORIES)})',
-            'start': 0,
-            'max_results': max_results,
-            'sortBy': 'submittedDate',
-            'sortOrder': 'descending'
-        }
+        all_papers = []
 
-        try:
-            # Make request
-            url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(query_params)}"
-            response = urllib.request.urlopen(url)
-            data = response.read().decode('utf-8')
+        # Query for each combination of categories
+        for primary_cat, secondary_cat in QUERY_COMBINATIONS:
+            # Construct query for this combination
+            query_params = {
+                'search_query': f'cat:{primary_cat} AND cat:{secondary_cat}',
+                'start': 0,
+                'max_results': max_results,
+                'sortBy': 'submittedDate',
+                'sortOrder': 'descending'
+            }
 
-            # Parse XML response
-            root = ET.fromstring(data)
-            namespace = {'atom': 'http://www.w3.org/2005/Atom'}
+            try:
+                # Make request
+                url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(query_params)}"
+                response = urllib.request.urlopen(url)
+                data = response.read().decode('utf-8')
 
-            papers = []
-            for entry in root.findall('atom:entry', namespace):
-                # Extract paper details
-                paper = {
-                    'title': self._safe_get_text(entry, namespace, 'atom:title'),
-                    'authors': [
-                        self._safe_get_text(author, namespace, 'atom:name')
-                        for author in entry.findall('atom:author', namespace)
-                    ],
-                    'published': self._safe_get_text(entry, namespace, 'atom:published'),
-                    'summary': self._safe_get_text(entry, namespace, 'atom:summary'),
-                    'link': self._safe_get_text(entry, namespace, 'atom:id'),
-                    'categories': [
-                        cat.get('term', '')
-                        for cat in entry.findall('atom:category', namespace)
-                    ]
-                }
+                # Parse XML response
+                root = ET.fromstring(data)
+                namespace = {'atom': 'http://www.w3.org/2005/Atom'}
 
-                # Filter by date
-                pub_date = datetime.strptime(paper['published'][:10], '%Y-%m-%d')
-                if start_date <= pub_date <= end_date:
-                    papers.append(paper)
+                for entry in root.findall('atom:entry', namespace):
+                    # Extract paper details
+                    paper = {
+                        'title': self._safe_get_text(entry, namespace, 'atom:title'),
+                        'authors': [
+                            self._safe_get_text(author, namespace, 'atom:name')
+                            for author in entry.findall('atom:author', namespace)
+                        ],
+                        'published': self._safe_get_text(entry, namespace, 'atom:published'),
+                        'summary': self._safe_get_text(entry, namespace, 'atom:summary'),
+                        'link': self._safe_get_text(entry, namespace, 'atom:id'),
+                        'categories': [
+                            cat.get('term', '')
+                            for cat in entry.findall('atom:category', namespace)
+                        ],
+                        'combination': f"{primary_cat} AND {secondary_cat}"
+                    }
 
-            return papers
+                    # Filter by date
+                    pub_date = datetime.strptime(paper['published'][:10], '%Y-%m-%d')
+                    if start_date <= pub_date <= end_date:
+                        all_papers.append(paper)
 
-        except (urllib.error.URLError, ET.ParseError) as e:
-            raise Exception(f"Error fetching papers from arXiv: {str(e)}")
+            except (urllib.error.URLError, ET.ParseError) as e:
+                raise Exception(f"Error fetching papers from arXiv: {str(e)}")
+
+        return all_papers
