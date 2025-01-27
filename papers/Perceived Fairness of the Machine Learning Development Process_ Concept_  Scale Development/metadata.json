@@ -1,0 +1,29 @@
+{
+  "title": "Perceived Fairness of the Machine Learning Development Process: Concept\n  Scale Development",
+  "authors": [
+    "Anoop Mishra",
+    "Deepak Khazanchi"
+  ],
+  "published": "2025-01-23T06:51:31Z",
+  "summary": "In machine learning (ML) applications, unfairness is triggered due to bias in\nthe data, the data curation process, erroneous assumptions, and implicit bias\nrendered during the development process. It is also well-accepted by\nresearchers that fairness in ML application development is highly subjective,\nwith a lack of clarity of what it means from an ML development and\nimplementation perspective. Thus, in this research, we investigate and\nformalize the notion of the perceived fairness of ML development from a\nsociotechnical lens. Our goal in this research is to understand the\ncharacteristics of perceived fairness in ML applications. We address this\nresearch goal using a three-pronged strategy: 1) conducting virtual focus\ngroups with ML developers, 2) reviewing existing literature on fairness in ML,\nand 3) incorporating aspects of justice theory relating to procedural and\ndistributive justice. Based on our theoretical exposition, we propose\noperational attributes of perceived fairness to be transparency,\naccountability, and representativeness. These are described in terms of\nmultiple concepts that comprise each dimension of perceived fairness. We use\nthis operationalization to empirically validate the notion of perceived\nfairness of machine learning (ML) applications from both the ML practioners and\nusers perspectives. The multidimensional framework for perceived fairness\noffers a comprehensive understanding of perceived fairness, which can guide the\ncreation of fair ML systems with positive implications for society and\nbusinesses.",
+  "link": "http://arxiv.org/abs/2501.13421v1",
+  "categories": [
+    "cs.HC",
+    "cs.CY",
+    "cs.LG",
+    "J.4; J.1; K.4; K.6; I.2; E.m"
+  ],
+  "combination": "cs.CY AND cs.HC",
+  "analysis": {
+    "is_relevant": true,
+    "relevance_score": 0.85,
+    "practical_applications": "The paper discusses practical applications by offering a framework to embed fairness in ML system development, focusing on operational attributes of perceived fairness like transparency, accountability, and representativeness. This can be utilized by organizations to develop fairer ML applications that reduce bias and enhance ethical standards.",
+    "thought_leadership_value": "The paper contributes significant thought leadership by formalizing the concept of perceived fairness in ML, bridging social concepts of justice with technical practices in ML development. It emphasizes the multi-dimensionality of fairness and provides a structured approach to integrating social considerations into technological practice, which are key to leading discourse on ethical AI.",
+    "key_insights": [
+      "Perceived fairness in ML is subjective and multifaceted, linking ML development to broader social justice concepts.",
+      "A structured framework for fairness includes transparency, accountability, and representativeness, guiding the creation of fair ML systems.",
+      "Engaging both ML practitioners and users' perspectives is critical to validating fairness in ML applications.",
+      "Operationalizing fairness in ML requires consideration of socio-technical aspects, not just technical metrics."
+    ]
+  }
+}
