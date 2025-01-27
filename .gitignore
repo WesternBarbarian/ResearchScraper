@@ -1,0 +1,31 @@
+
+# Environment and secrets
+.env
+*.env
+
+# Cache files
+.arxiv_cache.json
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output files and directories
+papers/
+papers.json
+analyzed_papers.json
+*.json
+*.csv
+
+# Python package files
+*.egg-info/
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
