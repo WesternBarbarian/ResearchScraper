@@ -71,6 +71,12 @@ arxiv-fetch download --input analyzed_papers.json
 
 # Specify custom output directory (default: ./papers)
 arxiv-fetch download --input analyzed_papers.json --output-dir my_papers
+
+# Parse downloaded papers into markdown format
+arxiv-fetch parse --titles "paper title"
+
+# Parse papers downloaded on a specific date
+arxiv-fetch parse --date "2024-03-21"
 ```
 
 The downloader:
