@@ -5,12 +5,10 @@ from datetime import datetime
 from pathlib import Path
 from llama_parse import LlamaParse
 from llama_index.core import SimpleDirectoryReader
-from dotenv import load_dotenv
 
 class PaperParser:
     def __init__(self):
-        load_dotenv()
-        self.api_key = os.getenv("LLAMA_CLOUD_API_KEY")
+        self.api_key = os.environ.get("LLAMA_CLOUD_API_KEY")
         if not self.api_key:
             raise ValueError("LLAMA_CLOUD_API_KEY not found in environment variables")
         
