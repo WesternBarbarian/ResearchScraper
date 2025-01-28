@@ -12,6 +12,8 @@ from .formatter import PaperFormatter
 from .exporters import export_to_json, export_to_csv
 from .paper_analyzer import analyze_papers
 from .paper_downloader import PaperDownloader
+from .paper_summarizer import PaperSummarizer
+
 
 def validate_days(days: int) -> bool:
     """Validate the number of days input."""
@@ -91,6 +93,15 @@ def run_parser(titles: Optional[list] = None, date: Optional[str] = None) -> Non
         print(f"Error: {str(e)}")
         sys.exit(1)
 
+def run_summarizer(titles: Optional[list] = None, date: Optional[str] = None) -> None:
+    """Run the paper summarizer with specified titles or date."""
+    try:
+        summarizer = PaperSummarizer()
+        summarizer.process_papers(titles=titles, date=date)
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        sys.exit(1)
+
 def main() -> None:
     """Entry point for command line interface."""
     parser = argparse.ArgumentParser(description='ArXiv paper fetcher and analyzer')
@@ -130,6 +141,13 @@ def main() -> None:
     group.add_argument('--titles', nargs='+', help='Paper titles (folder names) to parse')
     group.add_argument('--date', help='Parse papers downloaded on specific date (YYYY-MM-DD)')
 
+    # Summarize command
+    summarize_parser = subparsers.add_parser('summarize', help='Summarize parsed papers using OpenAI')
+    summarize_group = summarize_parser.add_mutually_exclusive_group()
+    summarize_group.add_argument('--titles', nargs='+', help='Paper titles (folder names) to summarize')
+    summarize_group.add_argument('--date', help='Summarize papers downloaded on a specific date (YYYY-MM-DD)')
+
+
     args = parser.parse_args()
 
     if args.command == 'fetch':
@@ -140,6 +158,8 @@ def main() -> None:
         run_downloader(args.input, args.output_dir)
     elif args.command == 'parse':
         run_parser(args.titles, args.date)
+    elif args.command == 'summarize':
+        run_summarizer(args.titles, args.date)
     else:
         parser.print_help()
         sys.exit(1)
