@@ -82,6 +82,15 @@ def run_downloader(input_file: str, output_dir: str) -> None:
         print(f"Error: {str(e)}")
         sys.exit(1)
 
+def run_parser(titles: Optional[list] = None, date: Optional[str] = None) -> None:
+    """Run the paper parser on downloaded papers."""
+    from .paper_parser import run_parser
+    try:
+        run_parser(titles=titles, date=date)
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        sys.exit(1)
+
 def main() -> None:
     """Entry point for command line interface."""
     parser = argparse.ArgumentParser(description='ArXiv paper fetcher and analyzer')
@@ -114,6 +123,13 @@ def main() -> None:
     download_parser.add_argument('--output-dir', type=str, default='papers',
                                help='Output directory for downloaded papers')
 
+    # Parse command
+    parse_parser = subparsers.add_parser('parse',
+                                        help='Parse downloaded papers using LlamaParse')
+    group = parse_parser.add_mutually_exclusive_group()
+    group.add_argument('--titles', nargs='+', help='Paper titles (folder names) to parse')
+    group.add_argument('--date', help='Parse papers downloaded on specific date (YYYY-MM-DD)')
+
     args = parser.parse_args()
 
     if args.command == 'fetch':
@@ -122,6 +138,8 @@ def main() -> None:
         run_analyzer(args.input, args.output, args.min_relevance)
     elif args.command == 'download':
         run_downloader(args.input, args.output_dir)
+    elif args.command == 'parse':
+        run_parser(args.titles, args.date)
     else:
         parser.print_help()
         sys.exit(1)
