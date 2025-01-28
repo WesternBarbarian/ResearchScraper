@@ -97,5 +97,9 @@ def main():
     except Exception as e:
         print(f"Error: {str(e)}")
         
-if __name__ == "__main__":
+def run_cli():
+    """Entry point for command-line usage"""
     main()
+
+if __name__ == "__main__":
+    run_cli()
