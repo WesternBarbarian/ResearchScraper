@@ -26,7 +26,7 @@ pip install .
 
 The tool provides three main commands: `fetch` for retrieving papers, `analyze` for identifying relevant papers using AI, and `download` for downloading PDFs.
 
-### Basic Usage
+### Fetch Paper Summaries
 
 ```bash
 # Fetch papers from the last 7 days (default)
@@ -36,7 +36,7 @@ arxiv-fetch fetch
 arxiv-fetch fetch --days 14
 ```
 
-### Export Options
+### Fetch Paper Summaries and Export
 
 ```bash
 # Export results to JSON
@@ -61,7 +61,7 @@ arxiv-fetch analyze --input papers.json --output analyzed_papers.json
 arxiv-fetch analyze --input papers.json --output analyzed_papers.json --min-relevance 0.8
 ```
 
-### PDF Download
+### Download and Parse Relevant Papers
 
 Download PDFs of analyzed papers and organize them into folders:
 
