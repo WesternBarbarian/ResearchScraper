@@ -1,11 +1,129 @@
 {
   "metadata": {
-    "exported_at": "2025-01-26T21:06:53.338819",
-    "paper_count": 5,
-    "min_relevance_score": 0.8,
+    "exported_at": "2025-01-28T03:16:10.503846",
+    "paper_count": 10,
+    "min_relevance_score": 0.7,
     "export_format_version": "1.0"
   },
   "papers": [
+    {
+      "title": "Design and Implementation of a Psychiatry Resident Training System Based\n  on Large Language Models",
+      "authors": [
+        "Zhenguang Zhong",
+        "Jia Tang"
+      ],
+      "published": "2025-01-24T14:35:21Z",
+      "summary": "Mental disorders have become a significant global public health issue, while\nthe shortage of psychiatrists and inefficient training systems severely hinder\nthe accessibility of mental health services. This paper designs and implements\nan artificial intelligence-based training system for psychiatrists. By\nintegrating technologies such as large language models, knowledge graphs, and\nexpert systems, the system constructs an intelligent and standardized training\nplatform. It includes six functional modules: case generation, consultation\ndialogue, examination prescription, diagnostic decision-making, integrated\ntraditional Chinese and Western medicine prescription, and expert evaluation,\nproviding comprehensive support from clinical skill training to professional\nlevel assessment.The system adopts a B/S architecture, developed using the\nVue.js and Node.js technology stack, and innovatively applies deep learning\nalgorithms for case generation and doctor-patient dialogue. In a clinical trial\ninvolving 60 psychiatrists at different levels, the system demonstrated\nexcellent performance and training outcomes: system stability reached 99.95%,\nAI dialogue accuracy achieved 96.5%, diagnostic accuracy reached 92.5%, and\nuser satisfaction scored 92.3%. Experimental data showed that doctors using the\nsystem improved their knowledge mastery, clinical thinking, and diagnostic\nskills by 35.6%, 28.4%, and 23.7%, respectively.The research results provide an\ninnovative solution for improving the efficiency of psychiatrist training and\nhold significant importance for promoting the standardization and scalability\nof mental health professional development.",
+      "link": "http://arxiv.org/abs/2501.14530v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC",
+        "q-bio.NC"
+      ],
+      "combination": "cs.CY AND cs.HC",
+      "analysis": {
+        "is_relevant": true,
+        "relevance_score": 0.9,
+        "practical_applications": "The paper discusses a significant practical application of AI by addressing the shortage and inefficiency in psychiatrist training. It proposes an AI-based training system that can potentially enhance the training process for psychiatrists, making it more standardized and scalable. This could be highly beneficial in contexts where there is a deficit of mental health professionals.",
+        "thought_leadership_value": "The integration of various AI technologies such as large language models, knowledge graphs, and expert systems into a psychiatry training framework provides forward-thinking insights into the role AI can play in medical education and professional development. Additionally, the use of deep learning for case generation and dialogue simulation exemplifies innovative applications of AI in building interactive educational platforms.",
+        "key_insights": [
+          "AI can significantly enhance the training and development of medical professionals, particularly in fields like psychiatry where there is a high demand and shortage of practitioners.",
+          "The use of large language models and AI-driven dialogue systems can improve not only the educational aspect but also simulate real-world clinical interactions for trainees.",
+          "Implementing such systems can increase scalability and access to quality training, potentially democratizing professional development in healthcare.",
+          "The stability and high accuracy rates of the system demonstrate the feasibility of deploying AI in practical and high-stakes environments such as medical training."
+        ]
+      }
+    },
+    {
+      "title": "Reddit Rules and Rulers: Quantifying the Link Between Rules and\n  Perceptions of Governance across Thousands of Communities",
+      "authors": [
+        "Leon Leibmann",
+        "Galen Weld",
+        "Amy X. Zhang",
+        "Tim Althoff"
+      ],
+      "published": "2025-01-24T01:26:41Z",
+      "summary": "Rules are a critical component of the functioning of nearly every online\ncommunity, yet it is challenging for community moderators to make data-driven\ndecisions about what rules to set for their communities. The connection between\na community's rules and how its membership feels about its governance is not\nwell understood. In this work, we conduct the largest-to-date analysis of rules\non Reddit, collecting a set of 67,545 unique rules across 5,225 communities\nwhich collectively account for more than 67% of all content on Reddit. More\nthan just a point-in-time study, our work measures how communities change their\nrules over a 5+ year period. We develop a method to classify these rules using\na taxonomy of 17 key attributes extended from previous work. We assess what\ntypes of rules are most prevalent, how rules are phrased, and how they vary\nacross communities of different types. Using a dataset of communities'\ndiscussions about their governance, we are the first to identify the rules most\nstrongly associated with positive community perceptions of governance: rules\naddressing who participates, how content is formatted and tagged, and rules\nabout commercial activities. We conduct a longitudinal study to quantify the\nimpact of adding new rules to communities, finding that after a rule is added,\ncommunity perceptions of governance immediately improve, yet this effect\ndiminishes after six months. Our results have important implications for\nplatforms, moderators, and researchers. We make our classification model and\nrules datasets public to support future research on this topic.",
+      "link": "http://arxiv.org/abs/2501.14163v1",
+      "categories": [
+        "cs.SI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC",
+      "analysis": {
+        "is_relevant": true,
+        "relevance_score": 0.8,
+        "practical_applications": "The paper provides a comprehensive analysis of rules within online communities, which can aid AI-driven tools in automating and optimizing community moderation efforts. By understanding the link between rules and governance perceptions, platforms can implement AI models to recommend effective rule changes or adjustments to enhance community management.",
+        "thought_leadership_value": "This research contributes to thought leadership by offering novel insights into how online community governance can be quantified and manipulated for improved user satisfaction. It sets a foundation for discussions on the role of AI in community management and governance, highlighting how data-driven rule-setting can impact user engagement and perception.",
+        "key_insights": [
+          "There is a measurable connection between community rules and perceptions of governance.",
+          "Introducing new rules can improve governance perceptions in the short term, but effects may diminish over time.",
+          "Specific types of rules are strongly associated with positive governance impressions, particularly those about participation, content formatting, and commercial activities.",
+          "A taxonomy of rule attributes can aid in classifying and understanding community rules effectively."
+        ]
+      }
+    },
+    {
+      "title": "Exploring User Perspectives on Data Collection, Data Sharing\n  Preferences, and Privacy Concerns with Remote Healthcare Technology",
+      "authors": [
+        "Daniela Napoli",
+        "Heather Molyneaux",
+        "Helene Fournier",
+        "Sonia Chiasson"
+      ],
+      "published": "2025-01-23T21:09:03Z",
+      "summary": "Remote healthcare technology can help tackle societal issues by improving\naccess to quality healthcare services and enhancing diagnoses through in-place\nmonitoring. These services can be implemented through a combination of mobile\ndevices, applications, wearable sensors, and other smart technology. It is\nparamount to handle sensitive data that is collected in ways that meet users'\nprivacy expectations. We surveyed 384 people in Canada aged 20 to 93 years old\nto explore participants' comfort with data collection, sharing preferences, and\npotential privacy concerns related to remote healthcare technology. We explore\nthese topics within the context of various healthcare scenarios including\nhealth emergencies and managing chronic health conditions.",
+      "link": "http://arxiv.org/abs/2501.14098v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC",
+      "analysis": {
+        "is_relevant": true,
+        "relevance_score": 0.8,
+        "practical_applications": "The paper offers insights into user perspectives on data handling, enhancing the design of privacy-centric features in remote healthcare applications, which can be crucial for developers and businesses in the healthcare technology sector.",
+        "thought_leadership_value": "This research contributes to thought leadership by addressing a critical aspect of remote healthcare technology, i.e., balancing technological advancement with privacy concerns, highlighting its importance in modern healthcare solutions.",
+        "key_insights": [
+          "User comfort with data collection and sharing is vital for the adoption and success of remote healthcare technologies.",
+          "Understanding privacy concerns can guide developers in creating more secure and trustworthy systems.",
+          "Implementing privacy-sensitive features in healthcare applications could improve user engagement and compliance."
+        ]
+      }
+    },
+    {
+      "title": "The Role of Generative AI in Software Student CollaborAItion",
+      "authors": [
+        "Natalie Kiesler",
+        "Jacqueline Smith",
+        "Juho Leinonen",
+        "Armando Fox",
+        "Stephen MacNeil",
+        "Petri Ihantola"
+      ],
+      "published": "2025-01-23T20:43:05Z",
+      "summary": "Collaboration is a crucial part of computing education. The increase in AI\ncapabilities over the last couple of years is bound to profoundly affect all\naspects of systems and software engineering, including collaboration. In this\nposition paper, we consider a scenario where AI agents would be able to take on\nany role in collaborative processes in computing education. We outline these\nroles, the activities and group dynamics that software development currently\ninclude, and discuss if and in what way AI could facilitate these roles and\nactivities. The goal of our work is to envision and critically examine\npotential futures. We present scenarios suggesting how AI can be integrated\ninto existing collaborations. These are contrasted by design fictions that help\ndemonstrate the new possibilities and challenges for computing education in the\nAI era.",
+      "link": "http://arxiv.org/abs/2501.14084v1",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC",
+      "analysis": {
+        "is_relevant": true,
+        "relevance_score": 0.8,
+        "practical_applications": "The paper explores integrating AI into collaborative processes in computing education, proposing scenarios where AI agents can assist in roles traditionally filled by students and educators. This can lead to enhanced learning experiences and optimized group dynamics in education settings.",
+        "thought_leadership_value": "By envisioning AI's role in education, the paper potentially sets a precedent for how educational institutions might adapt to technological advancements, offering a forward-thinking perspective on AI's impact on learning environments.",
+        "key_insights": [
+          "AI agents can potentially augment collaboration in educational settings, taking on roles currently performed by humans.",
+          "Understanding group dynamics in software development could inform how AI integrates into these roles to improve collaboration outcomes.",
+          "Scenarios and design fictions highlight both the benefits and challenges AI presents in education, prompting necessary discourse on the future of collaborative learning."
+        ]
+      }
+    },
     {
       "title": "Perceived Fairness of the Machine Learning Development Process: Concept\n  Scale Development",
       "authors": [
@@ -25,13 +143,13 @@
       "analysis": {
         "is_relevant": true,
         "relevance_score": 0.85,
-        "practical_applications": "The paper discusses practical applications by offering a framework to embed fairness in ML system development, focusing on operational attributes of perceived fairness like transparency, accountability, and representativeness. This can be utilized by organizations to develop fairer ML applications that reduce bias and enhance ethical standards.",
-        "thought_leadership_value": "The paper contributes significant thought leadership by formalizing the concept of perceived fairness in ML, bridging social concepts of justice with technical practices in ML development. It emphasizes the multi-dimensionality of fairness and provides a structured approach to integrating social considerations into technological practice, which are key to leading discourse on ethical AI.",
+        "practical_applications": "The paper provides a framework for assessing the perceived fairness of ML systems, which can be directly applied to improve and develop fair AI systems in practice. By focusing on transparency, accountability, and representativeness, businesses and developers can use these guidelines to mitigate bias and enhance the credibility and societal acceptance of their AI solutions.",
+        "thought_leadership_value": "The study contributes insight into the subjective nature of fairness in AI and ML by introducing a multidimensional framework informed by justice theory. This offers thought leaders a foundation for promoting ethical AI development and shaping discussions on the importance of fairness in technology applications.",
         "key_insights": [
-          "Perceived fairness in ML is subjective and multifaceted, linking ML development to broader social justice concepts.",
-          "A structured framework for fairness includes transparency, accountability, and representativeness, guiding the creation of fair ML systems.",
-          "Engaging both ML practitioners and users' perspectives is critical to validating fairness in ML applications.",
-          "Operationalizing fairness in ML requires consideration of socio-technical aspects, not just technical metrics."
+          "Perceived fairness in ML is subjective and involves multiple dimensions such as transparency, accountability, and representativeness.",
+          "A three-pronged approach involving focus groups, literature review, and justice theory was used to develop the concept of perceived fairness.",
+          "Operationalizing the fairness concepts helps empirically validate ML applications from practitioners' and users' perspectives.",
+          "The framework could guide businesses in creating ML systems with positive societal and business implications."
         ]
       }
     },
@@ -52,13 +170,14 @@
       "combination": "cs.CY AND cs.HC",
       "analysis": {
         "is_relevant": true,
-        "relevance_score": 0.8,
-        "practical_applications": "The paper's development of a standardized tool for measuring computing students' attitudes towards ethical reflection and agency is highly relevant for educational institutions and organizations interested in integrating and assessing computing ethics within their curricula. This can lead to more effective training programs that better prepare students to handle real-world ethical issues in AI development and implementation.",
-        "thought_leadership_value": "This paper contributes to thought leadership by establishing a novel framework, Critically Conscious Computing, which challenges current norms by emphasizing the importance of ethical and sociotechnical awareness in computing education. It pushes the discourse on ethics in AI and computing to focus more on student attitudes and capabilities, providing a new angle from which to approach ethics integration in technology fields.",
+        "relevance_score": 0.85,
+        "practical_applications": "The paper presents a practical tool that supports the integration and assessment of ethical considerations in computing education. This can be directly applied by educational institutions aiming to enhance their curricula and ensure students are cognizant of the ethical dimensions of their work.",
+        "thought_leadership_value": "The development of the 'Critical Reflection and Agency in Computing Index' provides a new framework that may set a standard in computing ethics education. This work can guide future discussions on how to effectively foster ethical responsibility among computing students and may influence policy and educational standards.",
         "key_insights": [
-          "The introduction of the Critical Reflection and Agency in Computing Index is a significant step in measuring and understanding the efficacy of ethics education in computing fields.",
-          "Standardizing the measurement of students' ethical perspectives can lead to better targeted and more effective interventions in computing education.",
-          "The paper highlights the importance of developing students' critical consciousness in computing, implying a need for ongoing evolution of educational practices to meet societal and ethical demands in AI and technology."
+          "The paper introduces a novel framework - Critically Conscious Computing.",
+          "It develops and validates the Critical Reflection and Agency in Computing Index, a tool for assessing computing students' attitudes toward ethical reflection.",
+          "The work aims to inform and enhance the design of targeted ethics interventions in computing education.",
+          "The index provides a standardized method to measure the effectiveness of ethics education efforts in computing."
         ]
       }
     },
@@ -82,13 +201,14 @@
       "combination": "cs.CY AND cs.HC",
       "analysis": {
         "is_relevant": true,
-        "relevance_score": 0.9,
-        "practical_applications": "The paper discusses the development and evaluation of an educational recommender system with enhanced user control, which is highly relevant for institutions aiming to improve personalized learning experiences. By focusing on user control, this approach can be applied in the design of educational technologies to increase user engagement, transparency, and satisfaction.",
-        "thought_leadership_value": "This paper provides valuable insights into the role of user control in educational technologies, potentially influencing how AI systems are designed for personal interaction and user satisfaction. It contributes to the discourse on transparent AI systems and the importance of user agency in automated processes, promoting an understanding of how these elements impact trust and satisfaction.",
+        "relevance_score": 0.85,
+        "practical_applications": "The paper discusses the design of an Educational Recommender System with varying levels of user control, which can be practically applied to improve user satisfaction, transparency, and trust in AI-driven educational tools. By incorporating user control over input, process, and output, educational platforms can offer more personalized and user-friendly experiences, potentially improving educational outcomes.",
+        "thought_leadership_value": "The paper provides valuable insights into the significance of user control in AI systems, particularly in the educational domain. It contributes to thought leadership by highlighting the interplay between transparency, trust, and satisfaction, offering a nuanced understanding of how these factors influence the acceptance and effectiveness of AI systems.",
         "key_insights": [
-          "User control is a critical factor that enhances the perceived benefits of educational recommender systems, particularly impacting transparency and satisfaction.",
-          "Increasing levels of user control correlates moderately with trust and strongly with satisfaction, emphasizing the need for interactive and user-centric design in AI applications.",
-          "The study model illustrates interactions between transparency, trust, and satisfaction, highlighting the complex relationships between these goals in user-centric system design."
+          "User control enhances users' perceived benefits of Educational Recommender Systems (ERSs).",
+          "There is a strong correlation between user control and transparency, moderate correlation with trust and satisfaction.",
+          "Transparency and trust have a moderate and strong correlation with satisfaction, respectively.",
+          "Transparency and trust are less correlated with each other, indicating independent contributions to user satisfaction."
         ]
       }
     },
@@ -116,14 +236,40 @@
       "analysis": {
         "is_relevant": true,
         "relevance_score": 0.85,
-        "practical_applications": "The paper provides a comprehensive taxonomy of how large language models (LLMs) are currently being utilized in the field of human-computer interaction (HCI), which is vital for understanding how these models can be applied effectively. By identifying domains, roles, and contribution types, it paves the way for developing more targeted and innovative applications of LLMs in various HCI subfields.",
-        "thought_leadership_value": "This paper contributes to thought leadership by systematically analyzing the integration of LLMs into HCI, highlighting both the current landscape and unexplored opportunities. Its critical evaluation of the validity, reproducibility, and limitations of existing research sets a groundwork for a more responsible and forward-looking adoption of AI in HCI.",
+        "practical_applications": "The paper's relevance lies in its identification of domains where large language models are applied within Human-Computer Interaction (HCI), providing insights that can guide the development of practical AI applications across various sectors. Additionally, understanding the roles LLMs play in HCI projects offers valuable methodologies for improving AI-driven design and research practices.",
+        "thought_leadership_value": "The paper contributes to thought leadership by presenting a taxonomy of LLM applications and roles in HCI, thus offering a structured perspective on the integration of advanced AI technologies in this field. It also emphasizes the importance of addressing validity and reproducibility issues, encouraging rigorous research practices that can be adapted across disciplines.",
         "key_insights": [
-          "LLMs are employed in diverse roles within HCI, such as research tools and simulated users, highlighting their versatility.",
-          "The paper identifies 10 different domains within CHI where LLMs have been applied, suggesting promising areas for future research and application.",
-          "Validity and reproducibility are major challenges acknowledged in current LLM-related research, emphasizing the need for more robust methodologies.",
-          "Most studies scrutinized involve closed models, indicating a possible limitation in transparency and accessibility.",
-          "The authors provide guiding questions to enhance the rigor and ethical consideration of research utilizing LLMs, offering a framework for future studies."
+          "LLMs are utilized across 10 diverse domains within HCI, indicating broad applicability.",
+          "Roles of LLMs in HCI include research tools and simulated users, offering multiple avenues for integration into practice.",
+          "Challenges such as validity and reproducibility of LLM-related work are prevalent, highlighting areas for methodological improvement.",
+          "The predominance of studies on closed models suggests a need for more open-model research.",
+          "Guiding questions provided in the paper can enhance the evaluation and execution of LLM-related research projects."
+        ]
+      }
+    },
+    {
+      "title": "A Basis for Human Responsibility in Artificial Intelligence Computation",
+      "authors": [
+        "Vincenzo Calderonio"
+      ],
+      "published": "2025-01-21T20:59:48Z",
+      "summary": "Recent advancements in artificial intelligence have reopened the question\nabout the boundaries of AI autonomy, particularly in discussions around\nartificial general intelligence (AGI) and its potential to act independently\nacross varied purposes. This paper explores these boundaries through the\nanalysis of the Alignment Research Center experiment on GPT-4 and introduces\nthe Start Button Problem, a thought experiment that examines the origins and\nlimits of AI autonomy. By examining the thought experiment and its\ncounterarguments will be enlightened how in the need for human activation and\npurpose definition lies the AI's inherent dependency on human-initiated\nactions, challenging the assumption of AI as an agent. Finally, the paper\naddresses the implications of this dependency on human responsibility,\nquestioning the measure of the extension of human responsibility when using AI\nsystems.",
+      "link": "http://arxiv.org/abs/2501.12498v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC",
+        "F.0; I.2; K.4; K.5"
+      ],
+      "combination": "cs.CY AND cs.HC",
+      "analysis": {
+        "is_relevant": true,
+        "relevance_score": 0.75,
+        "practical_applications": "The paper's exploration of AI autonomy and human responsibility can guide developers and policymakers in creating AI systems with well-defined boundaries for autonomy, ensuring human oversight and activation are integral to AI operations.",
+        "thought_leadership_value": "This research provides a critical perspective on AI autonomy that can inform debates and policies surrounding the development and deployment of AI, particularly in addressing ethical and control-related concerns associated with AGI.",
+        "key_insights": [
+          "AI systems require human activation and purpose definition, highlighting inherent dependency on humans.",
+          "Challenges the assumption of AI as completely autonomous agents, emphasizing the need for human oversight.",
+          "Examines the implications of AI autonomy on human responsibility, prompting a reevaluation of ethical frameworks."
         ]
       }
     },
@@ -149,13 +295,13 @@
       "analysis": {
         "is_relevant": true,
         "relevance_score": 0.85,
-        "practical_applications": "The paper suggests that while AI can facilitate content creation, human expertise in artistic fields is still crucial. This implies potential applications in the creative industries where AI and human collaboration could enhance artistic outputs in areas like digital art, graphic design, or media production.",
-        "thought_leadership_value": "The study highlights the ongoing value of human expertise even in an AI-dominated creative process, suggesting that AI should be seen as a complement rather than a replacement. This perspective is valuable for guiding creative industries through technological transitions and for informing educational programs aimed at preparing artists for the future.",
+        "practical_applications": "The study illustrates the practical applications of AI in the creative industry by demonstrating how generative AI can be used in artistic practices. It also highlights the importance of integrating human expertise with AI tools, suggesting enhancement rather than replacement of professional skills.",
+        "thought_leadership_value": "The paper provides valuable insights into the evolving relationship between AI and artistic practices, offering thought leadership on how professionals in creative industries can leverage AI to expand their skill sets and output. It challenges the notion of AI completely democratizing art, reinforcing the ongoing value of human expertise.",
         "key_insights": [
-          "Human expertise continues to enhance AI-generated outputs, indicating the importance of skilled artists in AI-driven environments.",
-          "The study provides experimental evidence that while AI can outperform humans in certain creative aspects, the best results still involve human input.",
-          "There is a potential for collaborative synergy between artists and AI, suggesting a future for hybrid creative processes.",
-          "Artists' ability to faithfully and creatively interpret AI-generated content remains superior, even if only marginally, underscoring the need for integrating AI into traditional artistic training."
+          "Professional artists generally produce more faithful and creative outputs than laypeople when using generative AI, though the margin is small.",
+          "Combining artistic skills with AI capabilities results in the best outcomes, emphasizing the need for integration in education and professional training.",
+          "Generative AI models like GPT-4o can match human performance in replicating images and surpass them in some creative tasks.",
+          "There is a tangible potential for AI to reshape the creative industries and arts education by fostering collaborative synergy between AI and human professionals."
         ]
       }
     }

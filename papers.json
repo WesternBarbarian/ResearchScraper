@@ -1,10 +1,82 @@
 {
   "metadata": {
-    "exported_at": "2025-01-26T19:58:41.451761",
-    "paper_count": 6,
+    "exported_at": "2025-01-28T03:11:44.987373",
+    "paper_count": 10,
     "export_format_version": "1.0"
   },
   "papers": [
+    {
+      "title": "Design and Implementation of a Psychiatry Resident Training System Based\n  on Large Language Models",
+      "authors": [
+        "Zhenguang Zhong",
+        "Jia Tang"
+      ],
+      "published": "2025-01-24T14:35:21Z",
+      "summary": "Mental disorders have become a significant global public health issue, while\nthe shortage of psychiatrists and inefficient training systems severely hinder\nthe accessibility of mental health services. This paper designs and implements\nan artificial intelligence-based training system for psychiatrists. By\nintegrating technologies such as large language models, knowledge graphs, and\nexpert systems, the system constructs an intelligent and standardized training\nplatform. It includes six functional modules: case generation, consultation\ndialogue, examination prescription, diagnostic decision-making, integrated\ntraditional Chinese and Western medicine prescription, and expert evaluation,\nproviding comprehensive support from clinical skill training to professional\nlevel assessment.The system adopts a B/S architecture, developed using the\nVue.js and Node.js technology stack, and innovatively applies deep learning\nalgorithms for case generation and doctor-patient dialogue. In a clinical trial\ninvolving 60 psychiatrists at different levels, the system demonstrated\nexcellent performance and training outcomes: system stability reached 99.95%,\nAI dialogue accuracy achieved 96.5%, diagnostic accuracy reached 92.5%, and\nuser satisfaction scored 92.3%. Experimental data showed that doctors using the\nsystem improved their knowledge mastery, clinical thinking, and diagnostic\nskills by 35.6%, 28.4%, and 23.7%, respectively.The research results provide an\ninnovative solution for improving the efficiency of psychiatrist training and\nhold significant importance for promoting the standardization and scalability\nof mental health professional development.",
+      "link": "http://arxiv.org/abs/2501.14530v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC",
+        "q-bio.NC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Reddit Rules and Rulers: Quantifying the Link Between Rules and\n  Perceptions of Governance across Thousands of Communities",
+      "authors": [
+        "Leon Leibmann",
+        "Galen Weld",
+        "Amy X. Zhang",
+        "Tim Althoff"
+      ],
+      "published": "2025-01-24T01:26:41Z",
+      "summary": "Rules are a critical component of the functioning of nearly every online\ncommunity, yet it is challenging for community moderators to make data-driven\ndecisions about what rules to set for their communities. The connection between\na community's rules and how its membership feels about its governance is not\nwell understood. In this work, we conduct the largest-to-date analysis of rules\non Reddit, collecting a set of 67,545 unique rules across 5,225 communities\nwhich collectively account for more than 67% of all content on Reddit. More\nthan just a point-in-time study, our work measures how communities change their\nrules over a 5+ year period. We develop a method to classify these rules using\na taxonomy of 17 key attributes extended from previous work. We assess what\ntypes of rules are most prevalent, how rules are phrased, and how they vary\nacross communities of different types. Using a dataset of communities'\ndiscussions about their governance, we are the first to identify the rules most\nstrongly associated with positive community perceptions of governance: rules\naddressing who participates, how content is formatted and tagged, and rules\nabout commercial activities. We conduct a longitudinal study to quantify the\nimpact of adding new rules to communities, finding that after a rule is added,\ncommunity perceptions of governance immediately improve, yet this effect\ndiminishes after six months. Our results have important implications for\nplatforms, moderators, and researchers. We make our classification model and\nrules datasets public to support future research on this topic.",
+      "link": "http://arxiv.org/abs/2501.14163v1",
+      "categories": [
+        "cs.SI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Exploring User Perspectives on Data Collection, Data Sharing\n  Preferences, and Privacy Concerns with Remote Healthcare Technology",
+      "authors": [
+        "Daniela Napoli",
+        "Heather Molyneaux",
+        "Helene Fournier",
+        "Sonia Chiasson"
+      ],
+      "published": "2025-01-23T21:09:03Z",
+      "summary": "Remote healthcare technology can help tackle societal issues by improving\naccess to quality healthcare services and enhancing diagnoses through in-place\nmonitoring. These services can be implemented through a combination of mobile\ndevices, applications, wearable sensors, and other smart technology. It is\nparamount to handle sensitive data that is collected in ways that meet users'\nprivacy expectations. We surveyed 384 people in Canada aged 20 to 93 years old\nto explore participants' comfort with data collection, sharing preferences, and\npotential privacy concerns related to remote healthcare technology. We explore\nthese topics within the context of various healthcare scenarios including\nhealth emergencies and managing chronic health conditions.",
+      "link": "http://arxiv.org/abs/2501.14098v1",
+      "categories": [
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "The Role of Generative AI in Software Student CollaborAItion",
+      "authors": [
+        "Natalie Kiesler",
+        "Jacqueline Smith",
+        "Juho Leinonen",
+        "Armando Fox",
+        "Stephen MacNeil",
+        "Petri Ihantola"
+      ],
+      "published": "2025-01-23T20:43:05Z",
+      "summary": "Collaboration is a crucial part of computing education. The increase in AI\ncapabilities over the last couple of years is bound to profoundly affect all\naspects of systems and software engineering, including collaboration. In this\nposition paper, we consider a scenario where AI agents would be able to take on\nany role in collaborative processes in computing education. We outline these\nroles, the activities and group dynamics that software development currently\ninclude, and discuss if and in what way AI could facilitate these roles and\nactivities. The goal of our work is to envision and critically examine\npotential futures. We present scenarios suggesting how AI can be integrated\ninto existing collaborations. These are contrasted by design fictions that help\ndemonstrate the new possibilities and challenges for computing education in the\nAI era.",
+      "link": "http://arxiv.org/abs/2501.14084v1",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
     {
       "title": "Perceived Fairness of the Machine Learning Development Process: Concept\n  Scale Development",
       "authors": [
