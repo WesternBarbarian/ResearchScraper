@@ -130,7 +130,7 @@ def main() -> None:
     fetch_parser.add_argument('--days', type=int, default=7,
                           help='Number of days to look back (1-30)')
     fetch_parser.add_argument('--categories', nargs='+', action='append',
-                          metavar=('CAT1', 'CAT2', 'OPERATOR'),
+                          metavar='CATEGORY',
                           help='Category combinations (e.g., cs.CY cs.HC AND or just cs.CY)')
     fetch_parser.add_argument('--export-json', type=str, metavar='FILENAME',
                           help='Export papers to JSON file')
@@ -174,7 +174,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.command == 'fetch':
-        run_fetcher(args.days, args.export_json, args.export_csv)
+        run_fetcher(args.days, args.categories, args.export_json, args.export_csv)
     elif args.command == 'analyze':
         run_analyzer(args.input, args.output, args.min_relevance)
     elif args.command == 'download':
