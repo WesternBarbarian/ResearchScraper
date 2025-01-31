@@ -1,188 +1,244 @@
 {
   "metadata": {
-    "exported_at": "2025-01-28T03:11:44.987373",
-    "paper_count": 10,
+    "exported_at": "2025-01-31T17:22:04.394026",
+    "paper_count": 13,
     "export_format_version": "1.0"
   },
   "papers": [
     {
-      "title": "Design and Implementation of a Psychiatry Resident Training System Based\n  on Large Language Models",
+      "title": "Hashtag Re-Appropriation for Audience Control on Recommendation-Driven\n  Social Media Xiaohongshu (rednote)",
       "authors": [
-        "Zhenguang Zhong",
-        "Jia Tang"
+        "Ruyuan Wan",
+        "Lingbo Tong",
+        "Tiffany Knearem",
+        "Toby Jia-Jun Li",
+        "Ting-Hao 'Kenneth' Huang",
+        "Qunfang Wu"
       ],
-      "published": "2025-01-24T14:35:21Z",
-      "summary": "Mental disorders have become a significant global public health issue, while\nthe shortage of psychiatrists and inefficient training systems severely hinder\nthe accessibility of mental health services. This paper designs and implements\nan artificial intelligence-based training system for psychiatrists. By\nintegrating technologies such as large language models, knowledge graphs, and\nexpert systems, the system constructs an intelligent and standardized training\nplatform. It includes six functional modules: case generation, consultation\ndialogue, examination prescription, diagnostic decision-making, integrated\ntraditional Chinese and Western medicine prescription, and expert evaluation,\nproviding comprehensive support from clinical skill training to professional\nlevel assessment.The system adopts a B/S architecture, developed using the\nVue.js and Node.js technology stack, and innovatively applies deep learning\nalgorithms for case generation and doctor-patient dialogue. In a clinical trial\ninvolving 60 psychiatrists at different levels, the system demonstrated\nexcellent performance and training outcomes: system stability reached 99.95%,\nAI dialogue accuracy achieved 96.5%, diagnostic accuracy reached 92.5%, and\nuser satisfaction scored 92.3%. Experimental data showed that doctors using the\nsystem improved their knowledge mastery, clinical thinking, and diagnostic\nskills by 35.6%, 28.4%, and 23.7%, respectively.The research results provide an\ninnovative solution for improving the efficiency of psychiatrist training and\nhold significant importance for promoting the standardization and scalability\nof mental health professional development.",
-      "link": "http://arxiv.org/abs/2501.14530v1",
+      "published": "2025-01-30T08:55:32Z",
+      "summary": "Algorithms have played a central role in personalized recommendations on\nsocial media. However, they also present significant obstacles for content\ncreators trying to predict and manage their audience reach. This issue is\nparticularly challenging for marginalized groups seeking to maintain safe\nspaces. Our study explores how women on Xiaohongshu (rednote), a\nrecommendation-driven social platform, proactively re-appropriate hashtags\n(e.g., #Baby Supplemental Food) by using them in posts unrelated to their\nliteral meaning. The hashtags were strategically chosen from topics that would\nbe uninteresting to the male audience they wanted to block. Through a\nmixed-methods approach, we analyzed the practice of hashtag re-appropriation\nbased on 5,800 collected posts and interviewed 24 active users from diverse\nbackgrounds to uncover users' motivations and reactions towards the\nre-appropriation. This practice highlights how users can reclaim agency over\ncontent distribution on recommendation-driven platforms, offering insights into\nself-governance within algorithmic-centered power structures.",
+      "link": "http://arxiv.org/abs/2501.18210v1",
       "categories": [
-        "cs.CY",
         "cs.HC",
-        "q-bio.NC"
+        "cs.CY",
+        "cs.IR",
+        "cs.SI"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Reddit Rules and Rulers: Quantifying the Link Between Rules and\n  Perceptions of Governance across Thousands of Communities",
+      "title": "From tools to thieves: Measuring and understanding public perceptions of\n  AI through crowdsourced metaphors",
       "authors": [
-        "Leon Leibmann",
-        "Galen Weld",
-        "Amy X. Zhang",
-        "Tim Althoff"
+        "Myra Cheng",
+        "Angela Y. Lee",
+        "Kristina Rapuano",
+        "Kate Niederhoffer",
+        "Alex Liebscher",
+        "Jeffrey Hancock"
       ],
-      "published": "2025-01-24T01:26:41Z",
-      "summary": "Rules are a critical component of the functioning of nearly every online\ncommunity, yet it is challenging for community moderators to make data-driven\ndecisions about what rules to set for their communities. The connection between\na community's rules and how its membership feels about its governance is not\nwell understood. In this work, we conduct the largest-to-date analysis of rules\non Reddit, collecting a set of 67,545 unique rules across 5,225 communities\nwhich collectively account for more than 67% of all content on Reddit. More\nthan just a point-in-time study, our work measures how communities change their\nrules over a 5+ year period. We develop a method to classify these rules using\na taxonomy of 17 key attributes extended from previous work. We assess what\ntypes of rules are most prevalent, how rules are phrased, and how they vary\nacross communities of different types. Using a dataset of communities'\ndiscussions about their governance, we are the first to identify the rules most\nstrongly associated with positive community perceptions of governance: rules\naddressing who participates, how content is formatted and tagged, and rules\nabout commercial activities. We conduct a longitudinal study to quantify the\nimpact of adding new rules to communities, finding that after a rule is added,\ncommunity perceptions of governance immediately improve, yet this effect\ndiminishes after six months. Our results have important implications for\nplatforms, moderators, and researchers. We make our classification model and\nrules datasets public to support future research on this topic.",
-      "link": "http://arxiv.org/abs/2501.14163v1",
+      "published": "2025-01-29T23:17:43Z",
+      "summary": "How has the public responded to the increasing prevalence of artificial\nintelligence (AI)-based technologies? We investigate public perceptions of AI\nby collecting over 12,000 responses over 12 months from a nationally\nrepresentative U.S. sample. Participants provided open-ended metaphors\nreflecting their mental models of AI, a methodology that overcomes the\nlimitations of traditional self-reported measures. Using a mixed-methods\napproach combining quantitative clustering and qualitative coding, we identify\n20 dominant metaphors shaping public understanding of AI. To analyze these\nmetaphors systematically, we present a scalable framework integrating language\nmodeling (LM)-based techniques to measure key dimensions of public perception:\nanthropomorphism (attribution of human-like qualities), warmth, and competence.\nWe find that Americans generally view AI as warm and competent, and that over\nthe past year, perceptions of AI's human-likeness and warmth have significantly\nincreased ($+34\\%, r = 0.80, p < 0.01; +41\\%, r = 0.62, p < 0.05$).\nFurthermore, these implicit perceptions, along with the identified dominant\nmetaphors, strongly predict trust in and willingness to adopt AI ($r^2 = 0.21,\n0.18, p < 0.001$). We further explore how differences in metaphors and implicit\nperceptions--such as the higher propensity of women, older individuals, and\npeople of color to anthropomorphize AI--shed light on demographic disparities\nin trust and adoption. In addition to our dataset and framework for tracking\nevolving public attitudes, we provide actionable insights on using metaphors\nfor inclusive and responsible AI development.",
+      "link": "http://arxiv.org/abs/2501.18045v1",
       "categories": [
-        "cs.SI",
+        "cs.CY",
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "\"I Would Never Trust Anything Western\": Kumu (Educator) Perspectives on\n  Use of LLMs for Culturally Revitalizing CS Education in Hawaiian Schools",
+      "authors": [
+        "Manas Mhasakar",
+        "Rachel Baker-Ramos",
+        "Ben Carter",
+        "Evyn-Bree Helekahi-Kaiwi",
+        "Josiah Hester"
+      ],
+      "published": "2025-01-29T19:05:33Z",
+      "summary": "As large language models (LLMs) become increasingly integrated into\neducational technology, their potential to assist in developing curricula has\ngained interest among educators. Despite this growing attention, their\napplicability in culturally responsive Indigenous educational settings like\nHawai`i's public schools and Kaiapuni (immersion language) programs, remains\nunderstudied. Additionally, `Olelo Hawai`i, the Hawaiian language, as a\nlow-resource language, poses unique challenges and concerns about cultural\nsensitivity and the reliability of generated content. Through surveys and\ninterviews with kumu (educators), this study explores the perceived benefits\nand limitations of using LLMs for culturally revitalizing computer science (CS)\neducation in Hawaiian public schools with Kaiapuni programs. Our findings\nhighlight AI's time-saving advantages while exposing challenges such as\ncultural misalignment and reliability concerns. We conclude with design\nrecommendations for future AI tools to better align with Hawaiian cultural\nvalues and pedagogical practices, towards the broader goal of trustworthy,\neffective, and culturally grounded AI technologies.",
+      "link": "http://arxiv.org/abs/2501.17942v1",
+      "categories": [
         "cs.CY",
         "cs.HC"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Exploring User Perspectives on Data Collection, Data Sharing\n  Preferences, and Privacy Concerns with Remote Healthcare Technology",
+      "title": "In-IDE Programming Courses: Learning Software Development in a\n  Real-World Setting",
       "authors": [
-        "Daniela Napoli",
-        "Heather Molyneaux",
-        "Helene Fournier",
-        "Sonia Chiasson"
+        "Anastasiia Birillo",
+        "Ilya Vlasov",
+        "Katsiaryna Dzialets",
+        "Hieke Keuning",
+        "Timofey Bryksin"
       ],
-      "published": "2025-01-23T21:09:03Z",
-      "summary": "Remote healthcare technology can help tackle societal issues by improving\naccess to quality healthcare services and enhancing diagnoses through in-place\nmonitoring. These services can be implemented through a combination of mobile\ndevices, applications, wearable sensors, and other smart technology. It is\nparamount to handle sensitive data that is collected in ways that meet users'\nprivacy expectations. We surveyed 384 people in Canada aged 20 to 93 years old\nto explore participants' comfort with data collection, sharing preferences, and\npotential privacy concerns related to remote healthcare technology. We explore\nthese topics within the context of various healthcare scenarios including\nhealth emergencies and managing chronic health conditions.",
-      "link": "http://arxiv.org/abs/2501.14098v1",
-      "categories": [
-        "cs.CY",
-        "cs.HC"
-      ],
-      "combination": "cs.CY AND cs.HC"
-    },
-    {
-      "title": "The Role of Generative AI in Software Student CollaborAItion",
-      "authors": [
-        "Natalie Kiesler",
-        "Jacqueline Smith",
-        "Juho Leinonen",
-        "Armando Fox",
-        "Stephen MacNeil",
-        "Petri Ihantola"
-      ],
-      "published": "2025-01-23T20:43:05Z",
-      "summary": "Collaboration is a crucial part of computing education. The increase in AI\ncapabilities over the last couple of years is bound to profoundly affect all\naspects of systems and software engineering, including collaboration. In this\nposition paper, we consider a scenario where AI agents would be able to take on\nany role in collaborative processes in computing education. We outline these\nroles, the activities and group dynamics that software development currently\ninclude, and discuss if and in what way AI could facilitate these roles and\nactivities. The goal of our work is to envision and critically examine\npotential futures. We present scenarios suggesting how AI can be integrated\ninto existing collaborations. These are contrasted by design fictions that help\ndemonstrate the new possibilities and challenges for computing education in the\nAI era.",
-      "link": "http://arxiv.org/abs/2501.14084v1",
+      "published": "2025-01-29T16:34:22Z",
+      "summary": "While learning programming languages is crucial for software engineers,\nmastering the necessary tools is equally important. To facilitate this,\nJetBrains recently released the JetBrains Academy plugin, which customizes the\nIDE for learners, allowing tutors to create courses entirely within IDE.\n  In this work, we provide the first exploratory study of this learning format.\nWe carried out eight one-hour interviews with students and developers who\ncompleted at least one course using the plugin, inquiring about their\nexperience with the format, the used IDE features, and the current\nshortcomings. Our results indicate that learning inside the IDE is overall\nwelcomed by the learners, allowing them to study in a more realistic setting,\nusing features such as debugging and code analysis, which are crucial for real\nsoftware development. With the collected results and the analysis of the\ncurrent drawbacks, we aim to contribute to teaching students more practical\nskills.",
+      "link": "http://arxiv.org/abs/2501.17747v1",
       "categories": [
         "cs.SE",
-        "cs.AI",
         "cs.CY",
         "cs.HC"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Perceived Fairness of the Machine Learning Development Process: Concept\n  Scale Development",
+      "title": "The Imitation Game According To Turing",
       "authors": [
-        "Anoop Mishra",
-        "Deepak Khazanchi"
+        "Sharon Temtsin",
+        "Diane Proudfoot",
+        "David Kaber",
+        "Christoph Bartneck"
       ],
-      "published": "2025-01-23T06:51:31Z",
-      "summary": "In machine learning (ML) applications, unfairness is triggered due to bias in\nthe data, the data curation process, erroneous assumptions, and implicit bias\nrendered during the development process. It is also well-accepted by\nresearchers that fairness in ML application development is highly subjective,\nwith a lack of clarity of what it means from an ML development and\nimplementation perspective. Thus, in this research, we investigate and\nformalize the notion of the perceived fairness of ML development from a\nsociotechnical lens. Our goal in this research is to understand the\ncharacteristics of perceived fairness in ML applications. We address this\nresearch goal using a three-pronged strategy: 1) conducting virtual focus\ngroups with ML developers, 2) reviewing existing literature on fairness in ML,\nand 3) incorporating aspects of justice theory relating to procedural and\ndistributive justice. Based on our theoretical exposition, we propose\noperational attributes of perceived fairness to be transparency,\naccountability, and representativeness. These are described in terms of\nmultiple concepts that comprise each dimension of perceived fairness. We use\nthis operationalization to empirically validate the notion of perceived\nfairness of machine learning (ML) applications from both the ML practioners and\nusers perspectives. The multidimensional framework for perceived fairness\noffers a comprehensive understanding of perceived fairness, which can guide the\ncreation of fair ML systems with positive implications for society and\nbusinesses.",
-      "link": "http://arxiv.org/abs/2501.13421v1",
+      "published": "2025-01-29T13:08:17Z",
+      "summary": "The current cycle of hype and anxiety concerning the benefits and risks to\nhuman society of Artificial Intelligence is fuelled, not only by the increasing\nuse of generative AI and other AI tools by the general public, but also by\nclaims made on behalf of such technology by popularizers and scientists. In\nparticular, recent studies have claimed that Large Language Models (LLMs) can\npass the Turing Test-a goal for AI since the 1950s-and therefore can \"think\".\nLarge-scale impacts on society have been predicted as a result. Upon detailed\nexamination, however, none of these studies has faithfully applied Turing's\noriginal instructions. Consequently, we conducted a rigorous Turing Test with\nGPT-4-Turbo that adhered closely to Turing's instructions for a three-player\nimitation game. We followed established scientific standards where Turing's\ninstructions were ambiguous or missing. For example, we performed a\nComputer-Imitates-Human Game (CIHG) without constraining the time duration and\nconducted a Man-Imitates-Woman Game (MIWG) as a benchmark. All but one\nparticipant correctly identified the LLM, showing that one of today's most\nadvanced LLMs is unable to pass a rigorous Turing Test. We conclude that recent\nextravagant claims for such models are unsupported, and do not warrant either\noptimism or concern about the social impact of thinking machines.",
+      "link": "http://arxiv.org/abs/2501.17629v1",
       "categories": [
         "cs.HC",
-        "cs.CY",
-        "cs.LG",
-        "J.4; J.1; K.4; K.6; I.2; E.m"
+        "cs.AI",
+        "cs.CY"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Development of the Critical Reflection and Agency in Computing Index",
+      "title": "Throwaway Accounts and Moderation on Reddit",
       "authors": [
-        "Aadarsh Padiyath",
-        "Mark Guzdial",
-        "Barbara Ericson"
+        "Cheng Guo",
+        "Kelly Caine"
       ],
-      "published": "2025-01-22T18:13:05Z",
-      "summary": "As computing's societal impact grows, so does the need for computing students\nto recognize and address the ethical and sociotechnical implications of their\nwork. While there are efforts to integrate ethics into computing curricula, we\nlack a standardized tool to measure those efforts, specifically, students'\nattitudes towards ethical reflection and their ability to effect change. This\npaper introduces the novel framework of Critically Conscious Computing and\nreports on the development and content validation of the Critical Reflection\nand Agency in Computing Index, a novel instrument designed to assess\nundergraduate computing students' attitudes towards practicing critically\nconscious computing. The resulting index is a theoretically grounded,\nexpert-reviewed tool to support research and practice in computing ethics\neducation. This enables researchers and educators to gain insights into\nstudents' perspectives, inform the design of targeted ethics interventions, and\nmeasure the effectiveness of computing ethics education initiatives.",
-      "link": "http://arxiv.org/abs/2501.13060v1",
+      "published": "2025-01-29T06:10:10Z",
+      "summary": "Social media platforms (SMPs) facilitate information sharing across varying\nlevels of sensitivity. A crucial design decision for SMP administrators is the\nplatform's identity policy, with some opting for real-name systems while others\nallow anonymous participation. Content moderation on these platforms is\nconducted by both humans and automated bots. This paper examines the\nrelationship between anonymity, specifically through the use of ``throwaway''\naccounts, and the extent and nature of content moderation on Reddit. Our\nfindings indicate that content originating from anonymous throwaway accounts is\nmore likely to violate rules on Reddit. Thus, they are more likely to be\nremoved by moderation than standard pseudonymous accounts. However, the\nmoderation actions applied to throwaway accounts are consistent with those\napplied to ordinary accounts, suggesting that the use of anonymous accounts\ndoes not necessarily necessitate increased human moderation. We conclude by\ndiscussing the implications of these findings for identity policies and content\nmoderation strategies on SMPs.",
+      "link": "http://arxiv.org/abs/2501.17430v1",
+      "categories": [
+        "cs.HC",
+        "cs.CY"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "The Right to AI",
+      "authors": [
+        "Rashid Mushkani",
+        "Hugo Berard",
+        "Allison Cohen",
+        "Shin Koeski"
+      ],
+      "published": "2025-01-29T04:32:41Z",
+      "summary": "This paper proposes a Right to AI, which asserts that individuals and\ncommunities should meaningfully participate in the development and governance\nof the AI systems that shape their lives. Motivated by the increasing\ndeployment of AI in critical domains and inspired by Henri Lefebvre's concept\nof the Right to the City, we reconceptualize AI as a societal infrastructure,\nrather than merely a product of expert design. In this paper, we critically\nevaluate how generative agents, large-scale data extraction, and diverse\ncultural values bring new complexities to AI oversight. The paper proposes that\ngrassroots participatory methodologies can mitigate biased outcomes and enhance\nsocial responsiveness. It asserts that data is socially produced and should be\nmanaged and owned collectively. Drawing on Sherry Arnstein's Ladder of Citizen\nParticipation and analyzing nine case studies, the paper develops a four-tier\nmodel for the Right to AI that situates the current paradigm and envisions an\naspirational future. It proposes recommendations for inclusive data ownership,\ntransparent design processes, and stakeholder-driven oversight. We also discuss\nmarket-led and state-centric alternatives and argue that participatory\napproaches offer a better balance between technical efficiency and democratic\nlegitimacy.",
+      "link": "http://arxiv.org/abs/2501.17899v1",
       "categories": [
         "cs.CY",
+        "cs.AI",
         "cs.HC"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Designing and Evaluating an Educational Recommender System with\n  Different Levels of User Control",
+      "title": "\"Ownership, Not Just Happy Talk\": Co-Designing a Participatory Large\n  Language Model for Journalism",
       "authors": [
-        "Qurat Ul Ain",
-        "Mohamed Amine Chatti",
-        "William Kana Tsoplefack",
-        "Rawaa Alatrash",
-        "Shoeb Joarder"
-      ],
-      "published": "2025-01-22T14:14:49Z",
-      "summary": "Educational recommender systems (ERSs) play a crucial role in personalizing\nlearning experiences and enhancing educational outcomes by providing\nrecommendations of personalized resources and activities to learners, tailored\nto their individual learning needs. However, their effectiveness is often\ndiminished by insufficient user control and limited transparency. To address\nthese challenges, in this paper, we present the systematic design and\nevaluation of an interactive ERS, in which we introduce different levels of\nuser control. Concretely, we introduce user control around the input (i.e.,\nuser profile), process (i.e., recommendation algorithm), and output (i.e.,\nrecommendations) of the ERS. To evaluate our system, we conducted an online\nuser study (N=30) to explore the impact of user control on users' perceptions\nof the ERS in terms of several important user-centric aspects. Moreover, we\ninvestigated the effects of user control on multiple recommendation goals,\nnamely transparency, trust, and satisfaction, as well as the interactions\nbetween these goals. Our results demonstrate the positive impact of user\ncontrol on user perceived benefits of the ERS. Moreover, our study shows that\nuser control strongly correlates with transparency and moderately correlates\nwith trust and satisfaction. In terms of interaction between these goals, our\nresults reveal that transparency moderately correlates and trust strongly\ncorrelates with satisfaction. Whereas, transparency and trust stand out as less\ncorrelated with each other.",
-      "link": "http://arxiv.org/abs/2501.12894v1",
-      "categories": [
-        "cs.IR",
-        "cs.CY",
-        "cs.HC"
-      ],
-      "combination": "cs.CY AND cs.HC"
-    },
-    {
-      "title": "Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at\n  CHI through a Systematic Literature Review",
-      "authors": [
-        "Rock Yuren Pang",
-        "Hope Schroeder",
-        "Kynnedy Simone Smith",
-        "Solon Barocas",
-        "Ziang Xiao",
         "Emily Tseng",
-        "Danielle Bragg"
+        "Meg Young",
+        "Marianne Aubin Le Quéré",
+        "Aimee Rinehart",
+        "Harini Suresh"
       ],
-      "published": "2025-01-22T00:31:51Z",
-      "summary": "Large language models (LLMs) have been positioned to revolutionize HCI, by\nreshaping not only the interfaces, design patterns, and sociotechnical systems\nthat we study, but also the research practices we use. To-date, however, there\nhas been little understanding of LLMs' uptake in HCI. We address this gap via a\nsystematic literature review of 153 CHI papers from 2020-24 that engage with\nLLMs. We taxonomize: (1) domains where LLMs are applied; (2) roles of LLMs in\nHCI projects; (3) contribution types; and (4) acknowledged limitations and\nrisks. We find LLM work in 10 diverse domains, primarily via empirical and\nartifact contributions. Authors use LLMs in five distinct roles, including as\nresearch tools or simulated users. Still, authors often raise validity and\nreproducibility concerns, and overwhelmingly study closed models. We outline\nopportunities to improve HCI research with and on LLMs, and provide guiding\nquestions for researchers to consider the validity and appropriateness of\nLLM-related work.",
-      "link": "http://arxiv.org/abs/2501.12557v1",
+      "published": "2025-01-28T21:06:52Z",
+      "summary": "Journalism has emerged as an essential domain for understanding the uses,\nlimitations, and impacts of large language models (LLMs) in the workplace. News\norganizations face divergent financial incentives: LLMs already permeate\nnewswork processes within financially constrained organizations, even as\nongoing legal challenges assert that AI companies violate their copyright. At\nstake are key questions about what LLMs are created to do, and by whom: How\nmight a journalist-led LLM work, and what can participatory design illuminate\nabout the present-day challenges about adapting ``one-size-fits-all''\nfoundation models to a given context of use? In this paper, we undertake a\nco-design exploration to understand how a participatory approach to LLMs might\naddress opportunities and challenges around AI in journalism. Our 20 interviews\nwith reporters, data journalists, editors, labor organizers, product leads, and\nexecutives highlight macro, meso, and micro tensions that designing for this\nopportunity space must address. From these desiderata, we describe the result\nof our co-design work: organizational structures and functionality for a\njournalist-controlled LLM. In closing, we discuss the limitations of commercial\nfoundation models for workplace use, and the methodological implications of\napplying participatory methods to LLM co-design.",
+      "link": "http://arxiv.org/abs/2501.17299v1",
       "categories": [
         "cs.HC",
-        "cs.AI",
         "cs.CL",
         "cs.CY"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "A Basis for Human Responsibility in Artificial Intelligence Computation",
+      "title": "Standardised schema and taxonomy for AI incident databases in critical\n  digital infrastructure",
       "authors": [
-        "Vincenzo Calderonio"
+        "Avinash Agarwal",
+        "Manisha J. Nene"
       ],
-      "published": "2025-01-21T20:59:48Z",
-      "summary": "Recent advancements in artificial intelligence have reopened the question\nabout the boundaries of AI autonomy, particularly in discussions around\nartificial general intelligence (AGI) and its potential to act independently\nacross varied purposes. This paper explores these boundaries through the\nanalysis of the Alignment Research Center experiment on GPT-4 and introduces\nthe Start Button Problem, a thought experiment that examines the origins and\nlimits of AI autonomy. By examining the thought experiment and its\ncounterarguments will be enlightened how in the need for human activation and\npurpose definition lies the AI's inherent dependency on human-initiated\nactions, challenging the assumption of AI as an agent. Finally, the paper\naddresses the implications of this dependency on human responsibility,\nquestioning the measure of the extension of human responsibility when using AI\nsystems.",
-      "link": "http://arxiv.org/abs/2501.12498v1",
+      "published": "2025-01-28T15:59:01Z",
+      "summary": "The rapid deployment of Artificial Intelligence (AI) in critical digital\ninfrastructure introduces significant risks, necessitating a robust framework\nfor systematically collecting AI incident data to prevent future incidents.\nExisting databases lack the granularity as well as the standardized structure\nrequired for consistent data collection and analysis, impeding effective\nincident management. This work proposes a standardized schema and taxonomy for\nAI incident databases, addressing these challenges by enabling detailed and\nstructured documentation of AI incidents across sectors. Key contributions\ninclude developing a unified schema, introducing new fields such as incident\nseverity, causes, and harms caused, and proposing a taxonomy for classifying AI\nincidents in critical digital infrastructure. The proposed solution facilitates\nmore effective incident data collection and analysis, thus supporting\nevidence-based policymaking, enhancing industry safety measures, and promoting\ntransparency. This work lays the foundation for a coordinated global response\nto AI incidents, ensuring trust, safety, and accountability in using AI across\nregions.",
+      "link": "http://arxiv.org/abs/2501.17037v1",
       "categories": [
         "cs.CY",
-        "cs.HC",
-        "F.0; I.2; K.4; K.5"
+        "cs.AI",
+        "cs.HC"
       ],
       "combination": "cs.CY AND cs.HC"
     },
     {
-      "title": "Expertise elevates AI usage: experimental evidence comparing laypeople\n  and professional artists",
+      "title": "\"My Whereabouts, my Location, it's Directly Linked to my Physical\n  Security\": An Exploratory Qualitative Study of Location-Dependent Security\n  and Privacy Perceptions among Activist Tech Users",
       "authors": [
-        "Thomas F. Eisenmann",
-        "Andres Karjus",
-        "Mar Canet Sola",
-        "Levin Brinkmann",
-        "Bramantyo Ibrahim Supriyatno",
-        "Iyad Rahwan"
+        "Christian Eichenmüller",
+        "Lisa Kuhn",
+        "Zinaida Benenson"
       ],
-      "published": "2025-01-21T18:53:21Z",
-      "summary": "Novel capacities of generative AI to analyze and generate cultural artifacts\nraise inevitable questions about the nature and value of artistic education and\nhuman expertise. Has AI already leveled the playing field between professional\nartists and laypeople, or do trained artistic expressive capacity, curation\nskills and experience instead enhance the ability to use these new tools? In\nthis pre-registered study, we conduct experimental comparisons between 50\nactive artists and a demographically matched sample of laypeople. We designed\ntwo tasks to approximate artistic practice for testing their capabilities in\nboth faithful and creative image creation: replicating a reference image, and\nmoving as far away as possible from it. We developed a bespoke platform where\nparticipants used a modern text-to-image model to complete both tasks. We also\ncollected and compared participants' sentiments towards AI. On average, artists\nproduced more faithful and creative outputs than their lay counterparts,\nalthough only by a small margin. While AI may ease content creation,\nprofessional expertise is still valuable - even within the confined space of\ngenerative AI itself. Finally, we also explored how well an exemplary\nvision-capable large language model (GPT-4o) would complete the same tasks, if\ngiven the role of an image generation agent, and found it performed on par in\ncopying but outperformed even artists in the creative task. The very best\nresults were still produced by humans in both tasks. These outcomes highlight\nthe importance of integrating artistic skills with AI training to prepare\nartists and other visual professionals for a technologically evolving\nlandscape. We see a potential in collaborative synergy with generative AI,\nwhich could reshape creative industries and education in the arts.",
-      "link": "http://arxiv.org/abs/2501.12374v1",
+      "published": "2025-01-28T12:13:53Z",
+      "summary": "Digital-safety research with at-risk users is particularly urgent. At-risk\nusers are more likely to be digitally attacked or targeted by surveillance and\ncould be disproportionately harmed by attacks that facilitate physical\nassaults. One group of such at-risk users are activists and politically active\nindividuals. For them, as for other at-risk users, the rise of smart\nenvironments harbors new risks. Since digitization and datafication are no\nlonger limited to a series of personal devices that can be switched on and off,\nbut increasingly and continuously surround users, granular geolocation poses\nnew safety challenges. Drawing on eight exploratory qualitative interviews of\nan ongoing research project, this contribution highlights what activists with\npowerful adversaries think about evermore data traces, including location data,\nand how they intend to deal with emerging risks. Responses of activists include\nattempts to control one's immediate technological surroundings and to more\ncarefully manage device-related location data. For some activists, threat\nmodeling has also shaped provider choices based on geopolitical considerations.\nSince many activists have not enough digital-safety knowledge for effective\nprotection, feelings of insecurity and paranoia are widespread. Channeling the\nconcerns and fears of our interlocutors, we call for more research on how\nactivists can protect themselves against evermore fine-grained location data\ntracking.",
+      "link": "http://arxiv.org/abs/2501.16885v1",
       "categories": [
         "cs.HC",
-        "cs.AI",
         "cs.CY"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Non-Western Perspectives on Web Inclusivity: A Study of Accessibility\n  Practices in the Global South",
+      "authors": [
+        "Masudul Hasan Masud Bhuiyan",
+        "Matteo Varvello",
+        "Cristian-Alexandru Staicu",
+        "Yasir Zaki"
+      ],
+      "published": "2025-01-28T00:30:03Z",
+      "summary": "The Global South faces unique challenges in achieving digital inclusion due\nto a heavy reliance on mobile devices for internet access and the prevalence of\nslow or unreliable networks. While numerous studies have investigated web\naccessibility within specific sectors such as education, healthcare, and\ngovernment services, these efforts have been largely constrained to individual\ncountries or narrow contexts, leaving a critical gap in cross-regional,\nlarge-scale analysis. This paper addresses this gap by conducting the first\nlarge-scale comparative study of mobile web accessibility across the Global\nSouth. In this work, we evaluate 100,000 websites from 10 countries in the\nGlobal South to provide a comprehensive understanding of accessibility\npractices in these regions. Our findings reveal that websites from countries\nwith strict accessibility regulations and enforcement tend to adhere better to\nWeb Content Accessibility Guidelines (WCAG) guidelines. However, accessibility\nviolations impact different disability groups in varying ways. Blind and\nlow-vision individuals in the Global South are disproportionately affected, as\nonly 40% of the evaluated websites meet critical accessibility guidelines. This\nsignificant shortfall is largely due to developers frequently neglecting to\nimplement valid alt text for images and ARIA descriptions, which are essential\nspecification mechanisms in the HTML standard for the effective operation of\nscreen readers.",
+      "link": "http://arxiv.org/abs/2501.16601v1",
+      "categories": [
+        "cs.SE",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Blissful (A)Ignorance: People form overly positive impressions of others\n  based on their written messages, despite wide-scale adoption of Generative AI",
+      "authors": [
+        "Jiaqi Zhu",
+        "Andras Molnar"
+      ],
+      "published": "2025-01-26T21:38:12Z",
+      "summary": "As the use of Generative AI (GenAI) tools becomes more prevalent in\ninterpersonal communication, understanding their impact on social perceptions\nis crucial. According to signaling theory, GenAI may undermine the credibility\nof social signals conveyed in writing, since it reduces the cost of writing and\nmakes it hard to verify the authenticity of messages. Using a pre-registered\nlarge-scale online experiment (N = 647; Prolific), featuring scenarios in a\nrange of communication contexts (personal vs. professional; close others vs.\nstrangers), we explored how senders' use of GenAI influenced recipients'\nimpressions of senders, both when GenAI use was known or uncertain. Consistent\nwith past work, we found strong negative effects on social impressions when\ndisclosing that a message was AI-generated, compared to when the same message\nwas human-written. However, under the more realistic condition when potential\nGenAI use was not explicitly highlighted, recipients did not exhibit any\nskepticism towards senders, and these \"uninformed\" impressions were virtually\nindistinguishable from those of fully human-written messages. Even when we\nhighlighted the potential (but uncertain) use of GenAI, recipients formed\noverly positive impressions. These results are especially striking given that\n46% of our sample admitted having used such tools for writing messages, just\nwithin the past two weeks. Our findings put past work in a new light: While\nsocial judgments can be substantially affected when GenAI use is explicitly\ndisclosed, this information may not be readily available in more realistic\ncommunication settings, making recipients blissfully ignorant about others'\npotential use of GenAI.",
+      "link": "http://arxiv.org/abs/2501.15678v1",
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "combination": "cs.CY AND cs.HC"
+    },
+    {
+      "title": "Dialogue Systems for Emotional Support via Value Reinforcement",
+      "authors": [
+        "Juhee Kim",
+        "Chunghu Mok",
+        "Jisun Lee",
+        "Hyang Sook Kim",
+        "Yohan Jo"
+      ],
+      "published": "2025-01-25T11:51:31Z",
+      "summary": "Emotional support dialogue systems aim to reduce help-seekers' distress and\nhelp them overcome challenges. While human values$\\unicode{x2013}$core beliefs\nthat shape an individual's priorities$\\unicode{x2013}$are increasingly\nemphasized in contemporary psychological therapy for their role in fostering\ninternal transformation and long-term emotional well-being, their integration\ninto emotional support systems remains underexplored. To bridge this gap, we\npresent a value-driven method for training emotional support dialogue systems\ndesigned to reinforce positive values in seekers. Our model learns to identify\nwhich values to reinforce at each turn and how to do so, by leveraging online\nsupport conversations from Reddit. The model demonstrated superior performance\nin emotional support capabilities, outperforming various baselines. Notably, it\nmore effectively explored and elicited values from seekers. Expert assessments\nby therapists highlighted two key strengths of our model: its ability to\nvalidate users' challenges and its effectiveness in emphasizing positive\naspects of their situations$\\unicode{x2013}$both crucial elements of value\nreinforcement. Our work validates the effectiveness of value reinforcement for\nemotional support systems and establishes a foundation for future research.",
+      "link": "http://arxiv.org/abs/2501.17182v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "I.2.7"
       ],
       "combination": "cs.CY AND cs.HC"
     }
