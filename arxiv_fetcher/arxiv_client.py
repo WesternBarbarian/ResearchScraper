@@ -92,8 +92,7 @@ class ArxivClient:
                         'categories': [
                             cat.get('term', '')
                             for cat in entry.findall('atom:category', namespace)
-                        ],
-                        'combination': f"{primary_cat} AND {secondary_cat}"
+                        ]
                     }
 
                     # Filter by date
