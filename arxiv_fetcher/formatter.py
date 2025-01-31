@@ -1,3 +1,4 @@
+
 """Format and display paper information."""
 
 from typing import List, Dict, Any
@@ -41,6 +42,15 @@ class PaperFormatter:
         table.add_column("Published", style="yellow")
         table.add_column("Categories", style="magenta")
 
+        for paper in papers:
+            table.add_row(
+                self._truncate_text(paper['title'], 100),
+                self._truncate_text(", ".join(paper['authors']), 50),
+                paper['published'][:10],
+                ", ".join(paper['categories'])
+            )
+
+        self.console.print(table)
 
     def display_categories(self, categories: Dict[str, str]) -> None:
         """Display arXiv categories in a formatted table."""
@@ -50,14 +60,5 @@ class PaperFormatter:
 
         for code, description in sorted(categories.items()):
             table.add_row(code, description)
-
-        self.console.print(table)
-            table.add_row(
-                self._truncate_text(paper['title'], 100),
-                self._truncate_text(", ".join(paper['authors']), 50),
-                paper['published'][:10],
-                ", ".join(paper['categories']),
-                self._truncate_text(paper['summary'], MAX_ABSTRACT_LENGTH)
-            )
 
         self.console.print(table)
