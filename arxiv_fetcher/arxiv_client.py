@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 import time
 from typing import List, Dict, Any, Optional
 
-from .config import ARXIV_API_URL, API_DELAY, QUERY_COMBINATIONS
+from .config import ARXIV_API_URL, API_DELAY, DEFAULT_CATEGORY
 
 class ArxivClient:
     def __init__(self):
