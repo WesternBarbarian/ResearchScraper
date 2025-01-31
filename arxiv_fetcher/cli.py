@@ -20,9 +20,10 @@ def validate_days(days: int) -> bool:
     """Validate the number of days input."""
     return 1 <= days <= 30
 
-def get_cache_key(days: int) -> str:
+def get_cache_key(days: int, categories: list = None) -> str:
     """Generate cache key based on parameters."""
-    return f"papers_{days}_{datetime.now().strftime('%Y-%m-%d')}"
+    cat_str = "_".join(str(c) for c in categories) if categories else "default"
+    return f"papers_{days}_{cat_str}_{datetime.now().strftime('%Y-%m-%d')}"
 
 def run_fetcher(days: Optional[int] = None, categories: Optional[List[List[str]]] = None, 
                 export_json: Optional[str] = None, export_csv: Optional[str] = None) -> None:
@@ -42,7 +43,7 @@ def run_fetcher(days: Optional[int] = None, categories: Optional[List[List[str]]
 
     try:
         # Check cache first
-        cache_key = get_cache_key(actual_days)
+        cache_key = get_cache_key(actual_days, categories)
         cached_data = cache_manager.get(cache_key)
 
         if cached_data is None:

@@ -68,6 +68,10 @@ class ArxivClient:
                 'sortOrder': 'descending'
             }
 
+            # Clear the cache to ensure fresh results
+            if hasattr(self, '_cache'):
+                self._cache.clear()
+
             try:
                 # Make request
                 url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(query_params)}"
