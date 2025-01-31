@@ -49,10 +49,8 @@ ARXIV_API_URL = "http://export.arxiv.org/api/query"
 API_DELAY = 3  # seconds between requests
 MAX_RESULTS = 100
 
-# Query combinations
-QUERY_COMBINATIONS = [
-    ("cs.CY", "cs.HC"),  # AI + HCI papers
-]
+# Default category if none specified
+DEFAULT_CATEGORY = "cs.CY"
 
 # Cache settings
 CACHE_DURATION = 3600  # 1 hour in seconds

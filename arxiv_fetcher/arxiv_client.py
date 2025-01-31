@@ -29,8 +29,15 @@ class ArxivClient:
         found = element.find(path, namespace)
         return found.text.strip() if found is not None and found.text is not None else ""
 
-    def fetch_papers(self, days: int, max_results: int) -> List[Dict[str, Any]]:
-        """Fetch papers from arXiv API."""
+    def fetch_papers(self, days: int, max_results: int, categories: List[tuple] = None) -> List[Dict[str, Any]]:
+        """Fetch papers from arXiv API.
+        
+        Args:
+            days: Number of days to look back
+            max_results: Maximum number of results to return
+            categories: List of tuples, each containing (cat1, cat2, operator)
+                       where operator is 'AND' or 'OR'. If None, uses DEFAULT_CATEGORY
+        """
         self._respect_rate_limit()
 
         # Calculate date range
@@ -39,11 +46,22 @@ class ArxivClient:
 
         all_papers = []
 
+        # If no categories specified, use default
+        if not categories:
+            categories = [(DEFAULT_CATEGORY, None, 'AND')]
+
         # Query for each combination of categories
-        for primary_cat, secondary_cat in QUERY_COMBINATIONS:
-            # Construct query for this combination
+        for combo in categories:
+            cat1, cat2, operator = combo if len(combo) == 3 else (*combo, 'AND')
+            
+            # Construct query based on whether we have one or two categories
+            if cat2:
+                query = f'cat:{cat1} {operator} cat:{cat2}'
+            else:
+                query = f'cat:{cat1}'
+                
             query_params = {
-                'search_query': f'cat:{primary_cat} AND cat:{secondary_cat}',
+                'search_query': query,
                 'start': 0,
                 'max_results': max_results,
                 'sortBy': 'submittedDate',

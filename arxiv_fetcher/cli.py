@@ -24,7 +24,8 @@ def get_cache_key(days: int) -> str:
     """Generate cache key based on parameters."""
     return f"papers_{days}_{datetime.now().strftime('%Y-%m-%d')}"
 
-def run_fetcher(days: Optional[int] = None, export_json: Optional[str] = None, export_csv: Optional[str] = None) -> None:
+def run_fetcher(days: Optional[int] = None, categories: Optional[List[List[str]]] = None, 
+                export_json: Optional[str] = None, export_csv: Optional[str] = None) -> None:
     """Main function to fetch and display papers."""
     # Use provided days or default
     actual_days = days or 7
@@ -46,7 +47,18 @@ def run_fetcher(days: Optional[int] = None, export_json: Optional[str] = None, e
 
         if cached_data is None:
             # Fetch new data if not in cache
-            papers = arxiv_client.fetch_papers(actual_days, MAX_RESULTS)
+            # Process category combinations
+            category_tuples = []
+            if categories:
+                for cats in categories:
+                    if len(cats) == 1:
+                        category_tuples.append((cats[0], None, 'AND'))
+                    elif len(cats) == 2:
+                        category_tuples.append((cats[0], cats[1], 'AND'))
+                    else:
+                        category_tuples.append((cats[0], cats[1], cats[2].upper()))
+            
+            papers = arxiv_client.fetch_papers(actual_days, MAX_RESULTS, category_tuples)
             cache_manager.set(cache_key, papers)
         else:
             papers = cached_data
@@ -117,6 +129,9 @@ def main() -> None:
     fetch_parser = subparsers.add_parser('fetch', help='Fetch recent CS/AI papers from arXiv')
     fetch_parser.add_argument('--days', type=int, default=7,
                           help='Number of days to look back (1-30)')
+    fetch_parser.add_argument('--categories', nargs='+', action='append',
+                          metavar=('CAT1', 'CAT2', 'OPERATOR'),
+                          help='Category combinations (e.g., cs.CY cs.HC AND or just cs.CY)')
     fetch_parser.add_argument('--export-json', type=str, metavar='FILENAME',
                           help='Export papers to JSON file')
     fetch_parser.add_argument('--export-csv', type=str, metavar='FILENAME',
