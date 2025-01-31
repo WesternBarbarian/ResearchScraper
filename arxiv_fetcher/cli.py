@@ -2,7 +2,7 @@
 
 import sys
 import argparse
-from typing import Optional
+from typing import Optional, List
 from datetime import datetime
 
 from .config import (CACHE_FILE, CACHE_DURATION, MAX_RESULTS, 
