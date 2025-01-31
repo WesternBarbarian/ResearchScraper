@@ -52,11 +52,6 @@ class PaperFormatter:
             table.add_row(code, description)
 
         self.console.print(table)
-
-
-        table.add_column("Summary", style="white")
-
-        for paper in papers:
             table.add_row(
                 self._truncate_text(paper['title'], 100),
                 self._truncate_text(", ".join(paper['authors']), 50),
