@@ -40,6 +40,20 @@ class PaperFormatter:
         table.add_column("Authors", style="green")
         table.add_column("Published", style="yellow")
         table.add_column("Categories", style="magenta")
+
+
+    def display_categories(self, categories: Dict[str, str]) -> None:
+        """Display arXiv categories in a formatted table."""
+        table = Table(title="arXiv Categories", show_lines=True, expand=True)
+        table.add_column("Code", style="cyan")
+        table.add_column("Description", style="green")
+
+        for code, description in sorted(categories.items()):
+            table.add_row(code, description)
+
+        self.console.print(table)
+
+
         table.add_column("Summary", style="white")
 
         for paper in papers:

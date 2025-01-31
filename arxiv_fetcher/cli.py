@@ -5,7 +5,8 @@ import argparse
 from typing import Optional
 from datetime import datetime
 
-from .config import CACHE_FILE, CACHE_DURATION, MAX_RESULTS
+from .config import (CACHE_FILE, CACHE_DURATION, MAX_RESULTS, 
+                          ARXIV_CATEGORIES)
 from .cache_manager import CacheManager
 from .arxiv_client import ArxivClient
 from .formatter import PaperFormatter
@@ -102,6 +103,11 @@ def run_summarizer(titles: Optional[list] = None, date: Optional[str] = None) ->
         print(f"Error: {str(e)}")
         sys.exit(1)
 
+def display_categories() -> None:
+    """Display all available arXiv categories."""
+    formatter = PaperFormatter()
+    formatter.display_categories(ARXIV_CATEGORIES)
+
 def main() -> None:
     """Entry point for command line interface."""
     parser = argparse.ArgumentParser(description='ArXiv paper fetcher and analyzer')
@@ -147,6 +153,8 @@ def main() -> None:
     summarize_group.add_argument('--titles', nargs='+', help='Paper titles (folder names) to summarize')
     summarize_group.add_argument('--date', help='Summarize papers downloaded on a specific date (YYYY-MM-DD)')
 
+    # Categories command
+    subparsers.add_parser('categories', help='List all available arXiv categories')
 
     args = parser.parse_args()
 
@@ -160,6 +168,8 @@ def main() -> None:
         run_parser(args.titles, args.date)
     elif args.command == 'summarize':
         run_summarizer(args.titles, args.date)
+    elif args.command == 'categories':
+        display_categories()
     else:
         parser.print_help()
         sys.exit(1)
