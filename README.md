@@ -34,6 +34,20 @@ arxiv-fetch fetch
 
 # Fetch papers from the last N days (1-30)
 arxiv-fetch fetch --days 14
+
+# Fetch papers from specific categories
+arxiv-fetch fetch --categories cs.CY
+
+# Fetch papers with combined categories (using AND/OR)
+arxiv-fetch fetch --categories cs.CY cs.HC AND
+arxiv-fetch fetch --categories cs.AI cs.LG OR
+```
+
+### View Available Categories
+
+```bash
+# List all available arXiv categories
+arxiv-fetch categories
 ```
 
 ### Fetch Paper Summaries and Export
