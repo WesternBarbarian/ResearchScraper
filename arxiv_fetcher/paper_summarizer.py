@@ -45,21 +45,28 @@ class PaperSummarizer:
             return f.read()
             
     def summarize_paper(self, content: str) -> str:
-        """Generate summary using OpenAI."""
-        prompt = f"""Please provide a concise summary of this academic paper, focusing on:
-1. Main objectives
-2. Key methodologies
-3. Principal findings
-4. Significant implications
+        
+        """Generate an effective summary of an academic paper."""
+        prompt = f"""You are an expert in academic research communication. Summarize the following paper for a knowledgeable but non-specialist audience. 
+        Focus on clarity and precision while maintaining technical depth. The summary should:
+        1. Be no longer than 1000 words.
+        2. Use plain, yet technically accurate, language.
 
-Paper content:
-{content[:15000]}  # Limit content length for API
-"""
+        Structure the summary as follows:
+        1. **Main Objectives:** What was the primary aim of the study? Include background context if necessary.
+        2. **Key Methodologies:** Briefly describe the most important methods used (e.g., experiments, data analysis techniques, models).
+        3. **Principal Findings:** Summarize the most critical discoveries or results.
+        4. **Significant Implications:** Explain the broader importance of these findings and their potential impact on the field or real-world applications.
+
+        Paper content:
+        {content[:15000]}  # Limit content length for API
+        """
         
         response = openai.chat.completions.create(
             model="gpt-4o",
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=500
+            max_tokens=600,
+            temperature=0.3
         )
         
         return response.choices[0].message.content
