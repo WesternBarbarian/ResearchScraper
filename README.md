@@ -16,11 +16,20 @@ A command-line tool for fetching and analyzing recent Computer Science and Artif
 ## Installation
 
 ```bash
-# Install from the current directory
+# Clone the repository
+git clone https://github.com/username/arxiv-fetcher.git
+cd arxiv-fetcher
+
+# Install the package
 pip install .
 
 # The command `arxiv-fetch` will be available after installation
+
+# For analysis features, set your OpenAI API key as an environment variable
+export OPENAI_API_KEY="your-api-key-here"
 ```
+
+**Note:** The `analyze` and `summarize` commands require an OpenAI API key to be set as an environment variable.
 
 ## Command-Line Usage
 
