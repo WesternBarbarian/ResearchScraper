@@ -26,7 +26,9 @@ pip install .
 # The command `arxiv-fetch` will be available after installation
 
 # For local installations outside of Replit
-# The package will be installed in your current Python environment
+# It's recommended to use a virtual environment to avoid system conflicts
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 #Set your OpenAI API key as an environment variable
 export OPENAI_API_KEY="your-api-key-here"
