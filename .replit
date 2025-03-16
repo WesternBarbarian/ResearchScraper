@@ -4,7 +4,7 @@ modules = ["python-3.11"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Project"
+runButton = "Development"
 
 [[workflows.workflow]]
 name = "Project"
@@ -28,6 +28,19 @@ task = "packager.installForAll"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "pip install -e ."
+
+[[workflows.workflow]]
+name = "Development"
+author = 30852646
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install -e ."
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "arxiv-fetch --help"
 
 [deployment]
 run = ["sh", "-c", "pip install -e ."]
