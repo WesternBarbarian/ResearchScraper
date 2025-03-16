@@ -25,6 +25,9 @@ pip install .
 
 # The command `arxiv-fetch` will be available after installation
 
+# For local installations outside of Replit
+# The package will be installed in your current Python environment
+
 # For analysis features, set your OpenAI API key as an environment variable
 export OPENAI_API_KEY="your-api-key-here"
 export LLAMA_CLOUD_API_KEY="your-api-key-here"
