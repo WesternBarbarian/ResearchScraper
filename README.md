@@ -27,9 +27,10 @@ pip install .
 
 # For analysis features, set your OpenAI API key as an environment variable
 export OPENAI_API_KEY="your-api-key-here"
+export LLAMA_CLOUD_API_KEY="your-api-key-here"
 ```
 
-**Note:** The `analyze` and `summarize` commands require an OpenAI API key to be set as an environment variable.
+**Note:** The `analyze` and `summarize` commands require an OpenAI API key to be set as an environment variable. The `parse` commands require a Llama cloud api key to use Llama parse.
 
 ## Command-Line Usage
 
@@ -45,7 +46,7 @@ arxiv-fetch categories
 ### Fetch Paper Summaries
 
 ```bash
-# Fetch papers from the last 7 days (default)
+# Fetch papers from the last 7 days (default cs.CY "Computers and Society")
 arxiv-fetch fetch
 
 # Fetch papers from the last N days (1-30)
