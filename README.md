@@ -18,7 +18,7 @@ A command-line tool for fetching and analyzing recent Computer Science and Artif
 ```bash
 # Clone the repository
 git clone https://github.com/WesternBarbarian/ResearchScraper.git
-cd arxiv-fetcher
+cd ResearchScraper
 
 # Install the package
 pip install .
