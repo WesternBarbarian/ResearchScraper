@@ -17,7 +17,7 @@ A command-line tool for fetching and analyzing recent Computer Science and Artif
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/arxiv-fetcher.git
+git clone https://github.com/WesternBarbarian/arxiv-fetcher.git
 cd arxiv-fetcher
 
 # Install the package
