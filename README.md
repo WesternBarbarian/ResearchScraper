@@ -1,6 +1,6 @@
 # ArXiv Fetcher CLI
 
-A command-line tool for fetching and analyzing recent Computer Science and Artificial Intelligence publications from arXiv. Perfect for researchers and developers who want to stay updated with the latest academic papers.
+A command-line tool for fetching and analyzing recent Computer Science and Artificial Intelligence publications from arXiv. 
 
 ## Features
 
